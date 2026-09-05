@@ -2,87 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Regular Tours - Boston Tours</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Faustina:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
-    <div class="logo"><strong>BOSTON TOURS</strong></div>
     <nav>
-      <a href="index.html">HOMEPAGE</a>
-      <a href="regular-tours.html">REGULAR TOURS</a>
-      <a href="custom-tours.html">CUSTOM TOURS</a>
-      <a href="booking.html">BOOKING</a>
-      <a href="about-us.html">ABOUT US</a>
+      <a href="index.html">Homepage</a>
+      <a href="regular-tours.html" class="active">Regular Tours</a>
+      <a href="custom-tours.html">Custom Tours</a>
+      <a href="booking.html">Booking</a>
+      <a href="about-us.html">About Us</a>
     </nav>
   </header>
 
-  <div class="page-header">
+  <section class="hero-banner">
     <h1>REGULAR TOURS</h1>
-    <p>Iconic places. Untold stories. Unforgettable experiences.</p>
+    <p>Discover our scheduled daily and weekly walking tours.</p>
+  </section>
+
+  <div class="container">
+    <!-- Schedule Overview Banner -->
+    <div class="card" style="margin-bottom:2.5rem; text-align:center;">
+      <h2>Schedule at a Glance</h2>
+      <p style="margin-top:0.5rem; margin-bottom:1.5rem;">Tours run daily in 2-hour blocks across four convenient time slots.</p>
+      
+      <div class="grid-2" style="text-align:left;">
+        <div style="background:var(--bg-light, #f9f9f9); padding:1rem; border:1px solid var(--border-color); border-radius:4px;">
+          <h3 style="color:var(--navy-dark); font-size:1.1rem; margin-bottom:0.5rem;">🌅 Morning Tours</h3>
+          <ul style="margin-left:1.2rem;">
+            <li><strong>Scenic, Suitability, Style</strong> – Beacon Hill & Back Bay architecture.</li>
+            <li><strong>From Beacons & Crooks To Deacons & Books</strong> – Historic downtown stories.</li>
+          </ul>
+        </div>
+
+        <div style="background:var(--bg-light, #f9f9f9); padding:1rem; border:1px solid var(--border-color); border-radius:4px;">
+          <h3 style="color:var(--navy-dark); font-size:1.1rem; margin-bottom:0.5rem;">🍕 Lunchtime Tours</h3>
+          <ul style="margin-left:1.2rem;">
+            <li><strong>Pizza, Pasta, Pastries, People</strong> – North End food culture (Max 6 guests).</li>
+            <li><strong>For Cod's Sake, Let's Eat</strong> – Seaport & waterfront culinary walk (Max 6 guests).</li>
+          </ul>
+        </div>
+
+        <div style="background:var(--bg-light, #f9f9f9); padding:1rem; border:1px solid var(--border-color); border-radius:4px;">
+          <h3 style="color:var(--navy-dark); font-size:1.1rem; margin-bottom:0.5rem;">☀️ Afternoon Tours</h3>
+          <ul style="margin-left:1.2rem;">
+            <li><strong>You Say You Want A Revolution?</strong> – Revolutionary era historical sites.</li>
+            <li><strong>Boston Bites & Sights</strong> – Chinatown & Downtown Crossing tasting tour.</li>
+          </ul>
+        </div>
+
+        <div style="background:var(--bg-light, #f9f9f9); padding:1rem; border:1px solid var(--border-color); border-radius:4px;">
+          <h3 style="color:var(--navy-dark); font-size:1.1rem; margin-bottom:0.5rem;">🌆 Early Evening Tours</h3>
+          <ul style="margin-left:1.2rem;">
+            <li><strong>Well, THAT'S Not Very Nice</strong> – Scandals, scoundrels, and dark history.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detailed Tour List -->
+    <h2 style="text-align:center; margin-bottom:1.5rem;">OUR FEATURED WALKS</h2>
+
+    <div class="grid-2" style="margin-bottom:2.5rem;">
+      <!-- Tour 1 -->
+      <div class="card">
+        <!-- IMAGE PLACEHOLDER -->
+        <img src="tour-beacon-hill.jpg" alt="[Upload Scenic, Suitability, Style Photo Here]" style="width:100%; height:180px; object-fit:cover; border:1px solid var(--border-color); margin-bottom:1rem;">
+        <h3>Scenic, Suitability, Style</h3>
+        <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Morning | 2 Hours | Max 12 Guests</p>
+        <p>A picturesque walk exploring the brownstones, gas lamps, cobblestones, and architectural evolution of Beacon Hill and Back Bay.</p>
+      </div>
+
+      <!-- Tour 2 -->
+      <div class="card">
+        <!-- IMAGE PLACEHOLDER -->
+        <img src="tour-north-end.jpg" alt="[Upload Pizza, Pasta, Pastries Photo Here]" style="width:100%; height:180px; object-fit:cover; border:1px solid var(--border-color); margin-bottom:1rem;">
+        <h3>Pizza, Pasta, Pastries, People</h3>
+        <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Lunchtime | 2 Hours | Max 6 Guests</p>
+        <p>Immense food, deep history, and iconic culture in Boston's famous North End. Sample authentic regional Italian specialties.</p>
+      </div>
+
+      <!-- Tour 3 -->
+      <div class="card">
+        <!-- IMAGE PLACEHOLDER -->
+        <img src="tour-revolution.jpg" alt="[Upload Revolution Tour Photo Here]" style="width:100%; height:180px; object-fit:cover; border:1px solid var(--border-color); margin-bottom:1rem;">
+        <h3>You Say You Want A Revolution?</h3>
+        <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Afternoon | 2 Hours | Max 12 Guests</p>
+        <p>Re-examine the events and key players leading up to 1776 from fresh, candid, and compelling perspectives.</p>
+      </div>
+
+      <!-- Tour 4 -->
+      <div class="card">
+        <!-- IMAGE PLACEHOLDER -->
+        <img src="tour-scandals.jpg" alt="[Upload Well THATS Not Very Nice Photo Here]" style="width:100%; height:180px; object-fit:cover; border:1px solid var(--border-color); margin-bottom:1rem;">
+        <h3>Well, THAT'S Not Very Nice</h3>
+        <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Early Evening | 2 Hours | Max 12 Guests</p>
+        <p>Uncover Boston’s darker tales—the rogues, rebellions, rivalries, and outrageous historical missteps.</p>
+      </div>
+    </div>
   </div>
 
-  <main class="tours-container">
-    
-    <div class="tour-card">
-      <h2>FROM BEACONS & CROOKS TO DEACONS & BOOKS</h2>
-      <div class="quote">“That's all I claim for Boston – that it is the thinking center of the continent, and therefore of the planet.” — Oliver Wendell Holmes Snr</div>
-      <p>A journey across the Shawmut peninsula to the made land of Boston's Back Bay. including 100 anecdotes and 1,000,000 trees.</p>
-      <ul>
-        <li>Starts at the State House</li>
-        <li>Ends near Back Bay & Copley T stations</li>
-        <li>Available when the Boston Public Library is open (limited to 12 guests)</li>
-        <li>Allow an extra hour if you haven't visited the Library.</li>
-      </ul>
+  <footer>
+    <div><strong>READY TO EXPERIENCE BOSTON IN A WHOLE NEW WAY?</strong><br>Book your tour today and discover the real stories that shaped a city – and a nation.</div>
+    <div>
+      📞 978.505.5275<br>
+      ✉️ mick@mickverran.com<br>
+      📍 Boston, Massachusetts
     </div>
-
-    <div class="tour-card">
-      <h2>PIZZA, PASTA, PASTRIES, PEOPLE</h2>
-      <div class="quote">“The North End smells like garlic, history, and happiness.” — Unknown</div>
-      <p>Arrive hungry for our tour, which is split into 3 parts – food – walking off the food – then food.</p>
-      <ul>
-        <li>Unique history of Boston's "Little Italy"</li>
-        <li>15+ opportunities to buy food</li>
-        <li>Bring cash (many places don't take cards)</li>
-        <li>Start/finish near the Tony DeMarco statue on Hanover Street</li>
-        <li>Restricted to 6 guests</li>
-        <li>Kids welcome (young ones often lose interest after pizza, cannoli, and North End Bingo).</li>
-      </ul>
-    </div>
-
-    <div class="tour-card">
-      <h2>WELL, THAT'S NOT VERY NICE</h2>
-      <div class="quote">“That's where you'll find me Along with lovers, muggers, and thieves Oh, but they're cool people.” — The Standells</div>
-      <p>Explore the darker side of Boston's history on a tour of the beautiful Beacon Hill neighborhood.</p>
-      <ul>
-        <li>Persecution, slavery, wars, riots, massacres, bombings, terrorism, robberies, corruption, gangland killings, bizarre murders, and serial killers</li>
-        <li>Focus on how our responses are shaped by our upbringing and the times we live in</li>
-        <li>Lower age limit at your discretion</li>
-        <li>Meet at State House; end at Charles/MGH T</li>
-        <li>Open to 12 guests.</li>
-      </ul>
-    </div>
-
-    <div class="tour-card">
-      <h2>YOU SAY YOU WANT A REVOLUTION</h2>
-      <p>We all want to change our world. So what does the course of the American Revolution in Boston have to teach us about how to do that - collectively and individually?</p>
-      <p>What would it take for the people of Boston to rise up - again - and restore the possibilities and promise of American Independence? By the end of this tour, you'll have your own revolutionary plan.</p>
-      <ul>
-        <li>3 tours, or combine all 3 in one grand tour</li>
-        <li>Tour 1: Boston Common to Faneuil Hall</li>
-        <li>Tour 2: North End (start/finish at Faneuil Hall)</li>
-        <li>Tour 3: Across the Charles to Charlestown</li>
-        <li>Tour 4: All 3 combined (lunch & a libation)</li>
-      </ul>
-    </div>
-
-    <div class="btn-container">
-      <a href="booking.html" class="btn">BOOK NOW!</a>
-    </div>
-
-  </main>
-
+  </footer>
 </body>
 </html>

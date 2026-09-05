@@ -2,90 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booking Page - Boston Tours</title>
+  <title>Booking - Boston Tours</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Faustina:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
-    <div class="logo"><strong>BOSTON TOURS</strong></div>
     <nav>
-      <a href="index.html">HOMEPAGE</a>
-      <a href="regular-tours.html">REGULAR TOURS</a>
-      <a href="custom-tours.html">CUSTOM TOURS</a>
-      <a href="booking.html">BOOKING</a>
-      <a href="about-us.html">ABOUT US</a>
+      <a href="index.html">Homepage</a>
+      <a href="regular-tours.html">Regular Tours</a>
+      <a href="custom-tours.html">Custom Tours</a>
+      <a href="booking.html" class="active">Booking</a>
+      <a href="about-us.html">About Us</a>
     </nav>
   </header>
 
-  <div class="page-header">
+  <section class="hero-banner">
     <h1>BOOKING PAGE</h1>
-  </div>
+    <p>Reserve your spot on an upcoming walk.</p>
+  </section>
 
-  <main class="content-container">
-
-    <div class="top-cards">
-      <div class="info-card">
-        <h2>TOUR DURATION</h2>
+  <div class="container">
+    <!-- Top 3 Info Cards -->
+    <div class="grid-3" style="margin-bottom: 2.5rem;">
+      <div class="card" style="text-align:center;">
+        <div style="font-size:2rem; margin-bottom:0.5rem;">🕒</div>
+        <h3>Tour Duration</h3>
         <p>Each tour lasts 2 hours.</p>
       </div>
-      <div class="info-card">
-        <h2>SUITABILITY</h2>
+      <div class="card" style="text-align:center;">
+        <div style="font-size:2rem; margin-bottom:0.5rem;">🏃</div>
+        <h3>Suitability</h3>
         <p>Boston is America's Walking City, and most of our tours cover about 1.5 miles on pretty flat terrain.</p>
       </div>
-      <div class="info-card">
-        <h2>GROUP SIZE</h2>
-        <p>We limit our tours to numbers that any stops can easily accommodate – 6 guests on our food tours, Pizza, Pasta, Pastries, and People and For Cod's Sake, Let's Eat – and up to 12 on others.</p>
+      <div class="card" style="text-align:center;">
+        <div style="font-size:2rem; margin-bottom:0.5rem;">👥</div>
+        <h3>Group Size</h3>
+        <p>We limit our tours to numbers that any stops can easily accommodate – 6 guests on our food tours (Pizza, Pasta, Pastries, and People & For Cod's Sake, Let's Eat) – and up to 12 on others.</p>
       </div>
     </div>
 
-    <div class="section-block">
-      <h2>SCHEDULE AT A GLANCE</h2>
-      <div class="schedule-grid">
-        <div class="sched-item">
-          <h3>MORNING</h3>
-          <p>Scenic, Suitability, Style</p>
-          <p><strong>From Beacons & Crooks To Deacons & Books</strong></p>
+    <!-- Schedule at a Glance & Scheduling Details -->
+    <div class="grid-2" style="margin-bottom: 2.5rem;">
+      <div class="card">
+        <h3 style="text-align:center; margin-bottom:1rem;">📅 Schedule at a Glance</h3>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem; font-size:0.9rem;">
+          <div>
+            <strong>🌅 MORNING</strong>
+            <ul style="margin-left:1.2rem; margin-top:0.25rem;">
+              <li>Scenic, Suitability, Style</li>
+              <li>From Beacons & Crooks To Deacons & Books</li>
+            </ul>
+          </div>
+          <div>
+            <strong>🍕 LUNCHTIME</strong>
+            <ul style="margin-left:1.2rem; margin-top:0.25rem;">
+              <li>Pizza, Pasta, Pastries, People</li>
+              <li>For Cod's Sake, Let's Eat</li>
+            </ul>
+          </div>
+          <div>
+            <strong>☀️ AFTERNOON</strong>
+            <ul style="margin-left:1.2rem; margin-top:0.25rem;">
+              <li>You Say You Want A Revolution?</li>
+              <li>Boston Bites & Sights</li>
+            </ul>
+          </div>
+          <div>
+            <strong>🌆 EARLY EVENING</strong>
+            <ul style="margin-left:1.2rem; margin-top:0.25rem;">
+              <li>Well, THAT'S Not Very Nice</li>
+            </ul>
+          </div>
         </div>
-        <div class="sched-item">
-          <h3>LUNCHTIME</h3>
-          <p><strong>Pizza, Pasta, Pastries, People</strong></p>
-          <p>For Cod's Sake, Let's Eat</p>
+        <p style="text-align:center; margin-top:1.5rem; font-size:0.85rem; font-style:italic;">
+          See the SCHEDULE AT A GLANCE on our Regular Tours page for more details.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-bottom:1rem;">✉️ Scheduling</h3>
+        <p style="margin-bottom:0.75rem;">Please schedule by text – to <strong>978.505.5275</strong> – or email – to <strong>mick@mickverran.com</strong>.</p>
+        <p style="margin-bottom:0.75rem;">We'll keep in touch, and if 2 days before tour day the forecast shows a high chance of rain, we'll reschedule – our tours are supposed to be fun, not an endurance test.</p>
+        <p style="margin-bottom:0.75rem;">With that in mind, I'll ask you to pay by Venmo or cash when our tour actually sets off.</p>
+        <p>Stuff happens; if you need to cancel, please send me a text message. If you cancel within 24 hours of the start of the tour, Venmo-ing me half the fee would be appreciated.</p>
+      </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="card" style="margin-bottom: 2.5rem;">
+      <h2 style="text-align:center; margin-bottom:1.5rem;">PRICES</h2>
+      <div style="display:flex; gap:2rem; align-items:center; flex-wrap:wrap;">
+        <!-- IMAGE PLACEHOLDER: Upload Food / Tour Image here -->
+        <div style="flex:1; min-width:280px;">
+          <img src="food-pricing-photo.jpg" alt="[Upload Food / Tour Image Here]" style="width:100%; height:220px; object-fit:cover; border:1px solid var(--border-color);">
         </div>
-        <div class="sched-item">
-          <h3>AFTERNOON</h3>
-          <p>You Say You Want A Revolution?</p>
-          <p>Boston Bites & Sights</p>
-        </div>
-        <div class="sched-item">
-          <h3>EARLY EVENING</h3>
-          <p><strong>Well, THAT'S Not Very Nice</strong></p>
+        
+        <div style="flex:1; min-width:280px;">
+          <p style="margin-bottom:0.5rem;">All our regular tours cost the same –</p>
+          <div style="font-size:3.5rem; font-weight:bold; color:var(--navy-dark); line-height:1;">$25</div>
+          <p style="font-weight:bold; letter-spacing:0.05em; margin-bottom:1rem;">PER HEAD / PER TOUR</p>
+          <p style="font-size:0.9rem; margin-bottom:0.5rem;">regardless of age.</p>
+          <hr style="border:0; border-top:1px dashed var(--border-color); margin:1rem 0;">
+          <p style="font-size:0.95rem; margin-bottom:0.5rem;">On our food tours, you might spend an additional ...</p>
+          <ul style="margin-left:1.2rem; font-size:0.9rem;">
+            <li><strong>Pizza, Pasta, Pastries, People</strong> – $30 per head</li>
+            <li><strong>For Cod's Sake, Let's Eat</strong> – between $30 and $100 per head, depending on your appetite for lobster.</li>
+          </ul>
         </div>
       </div>
-      <p><em>See the SCHEDULE AT A GLANCE on our Regular Tours page for more details.</em></p>
     </div>
+  </div>
 
-    <div class="section-block">
-      <h2>SCHEDULING</h2>
-      <p>Please schedule by text – to 978.505.5275 – or email – to mick@mickverran.com.</p>
-      <p>We'll keep in touch, and if 2 days before tour day the forecast shows a high chance of rain, we'll reschedule – our tours are supposed to be fun, not an endurance test.</p>
-      <p>With that in mind, I'll ask you to pay by Venmo or cash when our tour actually sets off.</p>
-      <p>Stuff happens; if you need to cancel, please send me a text message. If you cancel within 24 hours of the start of the tour, Venmo-ing me half the fee would be appreciated.</p>
+  <footer>
+    <div><strong>READY TO EXPERIENCE BOSTON IN A WHOLE NEW WAY?</strong><br>Book your tour today and discover the real stories that shaped a city – and a nation.</div>
+    <div>
+      📞 978.505.5275<br>
+      ✉️ mick@mickverran.com<br>
+      📍 Boston, Massachusetts
     </div>
-
-    <div class="price-box">
-      <p>All our regular tours cost the same –</p>
-      <h2>$25 PER HEAD PER TOUR</h2>
-      <p>regardless of age.</p>
-      <p style="margin-top: 1rem;">On our food tours, you might spend an additional ...</p>
-      <ul>
-        <li>• Pizza, Pasta, Pastries, People – $30 per head</li>
-        <li>• For Cod's Sake, Let's Eat – between $30 and $100 per head, depending on your appetite for lobster.</li>
-      </ul>
-    </div>
-
-  </main>
-
+  </footer>
 </body>
 </html>
