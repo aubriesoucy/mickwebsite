@@ -1,0 +1,204 @@
+/* Global Styling & Variables */
+:root {
+  --bg-cream: #f3ede2;
+  --navy-dark: #0c1b2a;
+  --gold-accent: #b89343;
+  --text-dark: #2b231d;
+  --card-bg: #f9f6f0;
+  --border-color: #d8cebc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  font-family: 'Faustina', serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, nav a, .btn-primary, .btn-outline {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header & Navigation */
+header {
+  background-color: var(--navy-dark);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+  color: var(--gold-accent);
+}
+
+/* Layout Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Page Banner/Hero */
+.hero-banner {
+  background-color: var(--navy-dark);
+  color: #ffffff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-bottom: 3px solid var(--gold-accent);
+  margin-bottom: 2rem;
+}
+
+.hero-banner h1 {
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.hero-banner p {
+  color: var(--gold-accent);
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Cards & Content Blocks */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.flourish {
+  text-align: center;
+  color: var(--gold-accent);
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+/* Quote Banners */
+.quote-banner {
+  background-color: var(--navy-dark);
+  color: #ffffff;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.quote-banner blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto 0.5rem auto;
+}
+
+.quote-banner cite {
+  color: var(--gold-accent);
+  font-style: normal;
+  font-size: 0.95rem;
+}
+
+/* Buttons */
+.btn-outline {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--navy-dark);
+  color: var(--navy-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.btn-outline:hover {
+  background-color: var(--navy-dark);
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: var(--navy-dark);
+  color: #ffffff;
+  padding: 0.85rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.cta-center {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+/* Grid Utilities */
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+.grid-5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+
+/* Custom Row Layout for Features */
+.feature-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.feature-row img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--navy-dark);
+  color: #ffffff;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  border-top: 3px solid var(--gold-accent);
+}
+
+footer a { color: var(--gold-accent); }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  header { justify-content: center; }
+  nav { gap: 1rem; flex-wrap: wrap; }
+  .feature-row { flex-direction: column; text-align: center; }
+  .feature-row img { width: 100%; }
+  footer { flex-direction: column; text-align: center; }
+}
