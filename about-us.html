@@ -1,52 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Thought-Provoking Tours of Boston</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Boston Tours</title>
+  <style>
+    :root {
+      --navy: #0d2137;
+      --gold: #d4af37;
+      --light-bg: #f8f9fa;
+      --text-dark: #2b2b2b;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text-dark); line-height: 1.6; background: var(--light-bg); }
+    header { background: var(--navy); color: var(--white); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: var(--white); text-decoration: none; margin-left: 1.5rem; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; }
+    nav a:hover { color: var(--gold); }
+    .page-header { background: var(--navy); color: var(--white); text-align: center; padding: 3rem 2rem; }
+    .page-header h1 { color: var(--gold); font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .content-container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+    .profile-card { background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 5px solid var(--gold); }
+    .profile-card h2 { color: var(--navy); margin-bottom: 0.2rem; }
+    .profile-card .title { color: var(--gold); font-weight: bold; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 1rem; }
+    .profile-card p { margin-bottom: 1rem; }
+    .mission-banner { background: var(--navy); color: var(--white); text-align: center; padding: 3rem 2rem; border-radius: 8px; }
+    .mission-banner h2 { font-size: 1.5rem; color: var(--gold); font-weight: normal; }
+    .mission-banner h3 { font-size: 2rem; margin-top: 0.5rem; }
+  </style>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="regular-tours.html">REGULAR TOURS</a></li>
-                <li><a href="custom-tours.html">CUSTOM TOURS</a></li>
-                <li><a href="booking.html">BOOKING</a></li>
-                <li><a href="about-us.html" class="active">ABOUT US</a></li>
-            </ul>
-        </nav>
-        <h1>ABOUT US</h1>
-    </header>
+  <header>
+    <div class="logo"><strong>BOSTON TOURS</strong></div>
+    <nav>
+      <a href="index.html">HOMEPAGE</a>
+      <a href="regular-tours.html">REGULAR TOURS</a>
+      <a href="custom-tours.html">CUSTOM TOURS</a>
+      <a href="booking.html">BOOKING</a>
+      <a href="about-us.html">ABOUT US</a>
+    </nav>
+  </header>
 
-    <main class="about-container">
-        
-        <section class="bio-block">
-            <h2>MICK VERRAN</h2>
-            <div class="bio-image">
-                <img src="mick-verran.jpg" alt="Mick Verran">
-            </div>
-            <p>I'm a barely-integrated, tea-drinking, football-loving, British immigrant. When I first arrived I immediately felt at home, and have come to love the city over the more than 30 years I've lived here.</p>
-            <p>After a 40+ year international career in organizational and leadership development, as a keynote speaker, trainer, and coach, I tell a good story.</p>
-        </section>
+  <div class="page-header">
+    <h1>ABOUT US</h1>
+    <p>Two storytellers. Two perspectives. One unforgettable Boston.</p>
+  </div>
 
-        <section class="bio-block">
-            <h2>COLONEL THOMAS DARLING</h2>
-            <div class="bio-image">
-                <img src="colonel-thomas-darling.jpg" alt="Colonel Thomas Darling">
-            </div>
-            <p>I have this alter-ego that works a couple of days a week on Boston Duck Tours. He's been here since 1768, watching the comings and goings of the great figures and events in Boston's history.</p>
-            <p>Boston Duck Tours let him narrate stories, but wisely they wont let him drive. Contact me to schedule a seat on the Colonel's tour.</p>
-            <p class="closing-salutation">See you on the Charles!</p>
-        </section>
+  <main class="content-container">
 
-    </main>
+    <div class="team-grid">
+      <div class="profile-card">
+        <h2>MICK VERRAN</h2>
+        <div class="title">Tour Guide</div>
+        <p>I'm a barely-integrated, tea-drinking, football-loving, British immigrant. When I first arrived I immediately felt at home, and have come to love the city over the more than 30 years I've lived here.</p>
+        <p>After a 40+ year international career in organizational and leadership development, as a keynote speaker, trainer, and coach, I tell a good story.</p>
+      </div>
 
-    <footer>
-        <div class="footer-stamp">........</div>
-        <p class="footer-tagline">YOU CAN'T BEAT BOSTON</p>
-    </footer>
+      <div class="profile-card">
+        <h2>COLONEL THOMAS DARLING</h2>
+        <div class="title">Tour Guide & Storyteller</div>
+        <p>I have this alter-ego that works a couple of days a week on Boston Duck Tours. He's been here since 1768, watching the comings and goings of the great figures and events in Boston's history.</p>
+        <p>Boston Duck Tours let him narrate stories, but wisely they wont let him drive.</p>
+        <p>Contact me to schedule a seat on the Colonel's tour.</p>
+        <p><strong>See you on the Charles!</strong></p>
+      </div>
+    </div>
+
+    <div class="mission-banner">
+      <h2>Different voices. Same mission:</h2>
+      <h3>Bringing Boston's stories to life.</h3>
+    </div>
+
+  </main>
 
 </body>
 </html>

@@ -1,150 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thought-Provoking Tours of Boston</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thought-Provoking Tours of Boston</title>
+  <style>
+    :root {
+      --navy: #0d2137;
+      --gold: #d4af37;
+      --light-bg: #f8f9fa;
+      --text-dark: #2b2b2b;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text-dark); line-height: 1.6; background: var(--light-bg); }
+    header { background: var(--navy); color: var(--white); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: var(--white); text-decoration: none; margin-left: 1.5rem; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; }
+    nav a:hover { color: var(--gold); }
+    .hero { background: linear-gradient(rgba(13, 33, 55, 0.85), rgba(13, 33, 55, 0.85)), #0d2137; color: var(--white); text-align: center; padding: 4rem 2rem; }
+    .hero h1 { font-size: 1.5rem; letter-spacing: 2px; color: var(--gold); }
+    .hero h2 { font-size: 3.5rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.25rem; font-style: italic; margin-bottom: 1.5rem; }
+    .hero .author { font-weight: bold; letter-spacing: 1px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; text-align: center; }
+    .feature-card { background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .feature-card h3 { color: var(--navy); font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .tagline { text-align: center; font-size: 1.75rem; font-weight: bold; color: var(--navy); margin: 2rem 0; padding: 0 1rem; }
+    .featured-tours { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    .featured-tours h2 { text-align: center; color: var(--navy); margin-bottom: 2rem; }
+    .tour-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .tour-item { background: var(--white); border-top: 4px solid var(--gold); border-radius: 4px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .tour-item h3 { color: var(--navy); margin-bottom: 0.5rem; }
+    .tour-item p { margin-bottom: 1.5rem; flex-grow: 1; }
+    .btn { display: inline-block; background: var(--navy); color: var(--white); text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: bold; text-align: center; }
+    .btn:hover { background: var(--gold); color: var(--navy); }
+    .center-btn { text-align: center; margin-top: 2rem; }
+    .quote-banner { background: var(--navy); color: var(--white); text-align: center; padding: 3rem 2rem; margin: 3rem 0; font-style: italic; }
+    .quote-banner blockquote { max-width: 800px; margin: 0 auto; font-size: 1.2rem; }
+    .quote-banner cite { display: block; margin-top: 1rem; color: var(--gold); font-style: normal; font-weight: bold; }
+    .schedule { max-width: 1000px; margin: 0 auto; padding: 2rem; background: var(--white); border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .schedule h2 { text-align: center; color: var(--navy); margin-bottom: 1.5rem; }
+    .schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+    .schedule-col h3 { color: var(--gold); background: var(--navy); padding: 0.5rem; text-align: center; border-radius: 4px; font-size: 1rem; margin-bottom: 0.5rem; }
+    footer { background: var(--navy); color: var(--white); text-align: center; padding: 3rem 2rem; margin-top: 4rem; }
+    footer p { margin-bottom: 0.5rem; }
+    .badge { display: inline-block; background: var(--gold); color: var(--navy); padding: 0.5rem 1rem; font-weight: bold; border-radius: 20px; margin-top: 1rem; }
+  </style>
 </head>
 <body>
 
-    <!-- Top Line Quote -->
-    <div class="top-line">
-        <p>"Boston is just a village, sprawling far and wide, more human than New York City." &mdash; Frederick Engels</p>
-    </div>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="index.html" class="active">HOME</a>
-        <a href="tours.html">REGULAR TOURS</a>
-        <a href="custom-tours.html">CUSTOM TOURS</a>
-        <a href="booking.html">BOOKING</a>
-        <a href="about.html">ABOUT US</a>
+  <header>
+    <div class="logo"><strong>BOSTON TOURS</strong></div>
+    <nav>
+      <a href="index.html">HOMEPAGE</a>
+      <a href="regular-tours.html">REGULAR TOURS</a>
+      <a href="custom-tours.html">CUSTOM TOURS</a>
+      <a href="booking.html">BOOKING</a>
+      <a href="about-us.html">ABOUT US</a>
     </nav>
+  </header>
 
-    <!-- Header / Hero Section -->
-    <header class="hero">
-        <h1>THOUGHT-PROVOKING TOURS OF BOSTON</h1>
-        <h2>Unique perspectives on America's most historic city</h2>
-        <p class="hero-subtext">Hidden gems. Marginalized voices. Challenging perspectives.</p>
-        <p class="hero-highlight">We'll change how you think about Boston - forever.</p>
-    </header>
+  <section class="hero">
+    <h1>THOUGHT-PROVOKING TOURS OF</h1>
+    <h2>BOSTON</h2>
+    <p>Unique perspectives on America's most historic city.</p>
+    <div class="author">MICK VERRAN & COLONEL THOMAS DARLING</div>
+  </section>
 
-    <!-- Icon Row / Features -->
-    <section class="icon-row-section">
-        <div class="icon-grid">
-            <div class="icon-item">
-                <div class="icon">📖</div>
-                <h3>CAPTIVATING STORIES</h3>
-                <p>Complex political and social histories "come alive".</p>
-            </div>
-            <div class="icon-item">
-                <div class="icon">🔍</div>
-                <h3>HIDDEN HISTORY</h3>
-                <p>We dig into stories others leave out - so you see the REAL Boston.</p>
-            </div>
-            <div class="icon-item">
-                <div class="icon">🎟️</div>
-                <h3>FUN MEMORIES</h3>
-                <p>Your kids will LOVE the tours - the games - the food.</p>
-            </div>
-            <div class="icon-item">
-                <div class="icon">🍽️</div>
-                <h3>CULINARY DELIGHTS</h3>
-                <p>Eat your way around Boston and its Harbor.</p>
-            </div>
-            <div class="icon-item">
-                <div class="icon">🇬🇧</div>
-                <h3>A UNIQUE PERSPECTIVE</h3>
-                <p>An outsider's perspective, told with typical British humour.</p>
-            </div>
-        </div>
-    </section>
+  <section class="features">
+    <div class="feature-card">
+      <h3>CAPTIVATING STORIES</h3>
+      <p>Complex political and social histories come alive.</p>
+    </div>
+    <div class="feature-card">
+      <h3>HIDDEN HISTORY</h3>
+      <p>We dig into stories others leave out – so you see the REAL Boston.</p>
+    </div>
+    <div class="feature-card">
+      <h3>FUN MEMORIES</h3>
+      <p>Your kids will LOVE the tours – the games – the food.</p>
+    </div>
+    <div class="feature-card">
+      <h3>CULINARY DELIGHTS</h3>
+      <p>Eat your way around Boston and its harbor.</p>
+    </div>
+    <div class="feature-card">
+      <h3>A UNIQUE PERSPECTIVE</h3>
+      <p>An outsiders perspective, told with typical British humor.</p>
+    </div>
+  </section>
 
-    <!-- Featured Tours Section -->
-    <section class="featured-tours">
-        <h2>FEATURED TOURS</h2>
-        <div class="tour-cards-grid">
-            
-            <div class="tour-card">
-                <h3>From Beacons And Crooks To Deacons And Books</h3>
-                <p>Walk the Boston Common and Public Garden to Copley Square.</p>
-            </div>
+  <div class="tagline">
+    We'll change how you think about Boston - forever.
+  </div>
 
-            <div class="tour-card">
-                <h3>Pizza, Pasta, Pastries, People</h3>
-                <p>Experience the past and present of Boston's vibrant 400 year old North End neighborhood.</p>
-            </div>
+  <section class="featured-tours">
+    <h2>FEATURED TOURS</h2>
+    <div class="tour-grid">
+      <div class="tour-item">
+        <h3>FROM BEACONS & CROOKS TO DEACONS & BOOKS</h3>
+        <p>Walk the Common, Public Garden, and Boston Public Library in Copley Square.</p>
+        <a href="regular-tours.html" class="btn">LEARN MORE →</a>
+      </div>
+      <div class="tour-item">
+        <h3>PIZZA, PASTA, PASTRIES, PEOPLE</h3>
+        <p>Three parts delicious food – walking off the food – then more food.</p>
+        <a href="regular-tours.html" class="btn">LEARN MORE →</a>
+      </div>
+      <div class="tour-item">
+        <h3>WELL, THAT'S NOT VERY NICE</h3>
+        <p>Explore the darker side of Boston's history – but without the gory details – in beautiful Beacon Hill neighborhood.</p>
+        <a href="regular-tours.html" class="btn">LEARN MORE →</a>
+      </div>
+      <div class="tour-item">
+        <h3>YOU SAY YOU WANT A REVOLUTION</h3>
+        <p>Explore 12 factors that contributed to the success of the American Revolution.</p>
+        <a href="regular-tours.html" class="btn">LEARN MORE →</a>
+      </div>
+    </div>
+    <div class="center-btn">
+      <a href="regular-tours.html" class="btn" style="background: var(--gold); color: var(--navy);">VIEW ALL TOURS</a>
+    </div>
+  </section>
 
-            <div class="tour-card">
-                <h3>Well, THAT'S Not Very Nice</h3>
-                <p>Explore the darker side of Boston’s history - but without the gory details - in the beautiful Beacon Hill neighborhood.</p>
-            </div>
+  <section class="quote-banner">
+    <blockquote>
+      “I would sooner live in a society governed by the first two thousand names in Boston telephone directory than in a society governed by the two thousand faculty members of Harvard University.”
+      <cite>- William F. Buckley Jr.</cite>
+    </blockquote>
+  </section>
 
-            <div class="tour-card">
-                <h3>You Say You Want A Revolution</h3>
-                <p>Walk the Freedom Trail to understand what led to the success of the American Revolution.</p>
-            </div>
+  <section class="schedule">
+    <h2>SCHEDULE AT A GLANCE</h2>
+    <div class="schedule-grid">
+      <div class="schedule-col">
+        <h3>MORNING</h3>
+        <p>Scenic, Suitability, Style</p>
+        <p><strong>From Beacons & Crooks To Deacons & Books</strong></p>
+      </div>
+      <div class="schedule-col">
+        <h3>LUNCHTIME</h3>
+        <p><strong>Pizza, Pasta, Pastries, People</strong></p>
+        <p>For Cod's Sake, Let's Eat</p>
+      </div>
+      <div class="schedule-col">
+        <h3>AFTERNOON</h3>
+        <p>You Say You Want A Revolution?</p>
+        <p>Boston Bites & Sights</p>
+      </div>
+      <div class="schedule-col">
+        <h3>EARLY EVENING</h3>
+        <p><strong>Well, THAT'S Not Very Nice</strong></p>
+      </div>
+      <div class="schedule-col">
+        <h3>TIME</h3>
+        <p><strong>9:00AM to 5:00PM</strong></p>
+        <p>All tours are 2-2.5 hours Check individual listings for details.</p>
+      </div>
+    </div>
+  </section>
 
-        </div>
-        <div class="center-btn">
-            <a href="tours.html" class="btn">VIEW ALL TOURS</a>
-        </div>
-    </section>
-
-    <!-- Quote Section -->
-    <section class="quote-section">
-        <blockquote>
-            "I would sooner live in a society governed by the first two thousand names in the Boston telephone directory than in a society governed by the two thousand faculty members of Harvard University."
-            <footer>&mdash; William F. Buckley Jr.</footer>
-        </blockquote>
-    </section>
-
-    <!-- Schedule at a Glance -->
-    <section class="schedule-section">
-        <h2>SCHEDULE AT A GLANCE</h2>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tour Name</th>
-                        <th>Days Offered</th>
-                        <th>Meeting Point</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>From Beacons And Crooks To Deacons And Books</td>
-                        <td>Library Open Days</td>
-                        <td>Massachusetts State House Front Steps</td>
-                    </tr>
-                    <tr>
-                        <td>Pizza, Pasta, Pastries, People</td>
-                        <td>Regular Weekly Offerings</td>
-                        <td>Tony DeMarco Statue (Hanover St)</td>
-                    </tr>
-                    <tr>
-                        <td>Well, THAT'S Not Very Nice</td>
-                        <td>Regular Weekly Offerings</td>
-                        <td>Massachusetts State House Front Steps</td>
-                    </tr>
-                    <tr>
-                        <td>You Say You Want A Revolution</td>
-                        <td>Regular Weekly Offerings</td>
-                        <td>Boston Common (Tremont & Park St)</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p class="stamp">..............</p>
-            <h2>YOU CAN'T BEAT BOSTON</h2>
-        </div>
-    </footer>
+  <footer>
+    <h2>READY TO EXPERIENCE BOSTON IN A WHOLE NEW WAY?</h2>
+    <p>Book your tour today and discover the stories that shaped a city – and a nation.</p>
+    <p><strong>978.505.5275</strong> | <strong>mick@mickverran.com</strong></p>
+    <p>Boston, Massachusetts</p>
+    <div class="badge">YOU CAN'T BEAT BOSTON</div>
+  </footer>
 
 </body>
 </html>

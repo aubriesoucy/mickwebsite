@@ -1,151 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regular Tours - Thought-Provoking Tours of Boston</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regular Tours - Boston Tours</title>
+  <style>
+    :root {
+      --navy: #0d2137;
+      --gold: #d4af37;
+      --light-bg: #f8f9fa;
+      --text-dark: #2b2b2b;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text-dark); line-height: 1.6; background: var(--light-bg); }
+    header { background: var(--navy); color: var(--white); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: var(--white); text-decoration: none; margin-left: 1.5rem; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; }
+    nav a:hover { color: var(--gold); }
+    .page-header { background: var(--navy); color: var(--white); text-align: center; padding: 3rem 2rem; }
+    .page-header h1 { color: var(--gold); font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .tours-container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+    .tour-card { background: var(--white); border-radius: 8px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 6px solid var(--gold); }
+    .tour-card h2 { color: var(--navy); margin-bottom: 0.5rem; }
+    .quote { font-style: italic; color: #555; margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
+    .tour-card p { margin-bottom: 1rem; }
+    .tour-card ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+    .tour-card li { margin-bottom: 0.25rem; }
+    .btn-container { text-align: center; margin: 3rem 0; }
+    .btn { display: inline-block; background: var(--gold); color: var(--navy); text-decoration: none; padding: 1rem 2.5rem; border-radius: 4px; font-weight: bold; font-size: 1.2rem; }
+    .btn:hover { background: var(--navy); color: var(--white); }
+  </style>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="regular-tours.html" class="active">REGULAR TOURS</a></li>
-                <li><a href="custom-tours.html">CUSTOM TOURS</a></li>
-                <li><a href="booking.html">BOOKING</a></li>
-                <li><a href="about-us.html">ABOUT US</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo"><strong>BOSTON TOURS</strong></div>
+    <nav>
+      <a href="index.html">HOMEPAGE</a>
+      <a href="regular-tours.html">REGULAR TOURS</a>
+      <a href="custom-tours.html">CUSTOM TOURS</a>
+      <a href="booking.html">BOOKING</a>
+      <a href="about-us.html">ABOUT US</a>
+    </nav>
+  </header>
 
-    <!-- Schedule At A Glance Repeat -->
-    <section class="schedule-glance">
-        <h2>SCHEDULE AT A GLANCE</h2>
-        <table class="schedule-table">
-            <thead>
-                <tr>
-                    <th>DAY</th>
-                    <th>TOUR</th>
-                    <th>START LOCATION</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Table contents -->
-            </tbody>
-        </table>
-    </section>
+  <div class="page-header">
+    <h1>REGULAR TOURS</h1>
+    <p>Iconic places. Untold stories. Unforgettable experiences.</p>
+  </div>
 
-    <main class="tours-container">
-        <h2>AVAILABLE NOW</h2>
+  <main class="tours-container">
+    
+    <div class="tour-card">
+      <h2>FROM BEACONS & CROOKS TO DEACONS & BOOKS</h2>
+      <div class="quote">“That's all I claim for Boston – that it is the thinking center of the continent, and therefore of the planet.” — Oliver Wendell Holmes Snr</div>
+      <p>A journey across the Shawmut peninsula to the made land of Boston's Back Bay. including 100 anecdotes and 1,000,000 trees.</p>
+      <ul>
+        <li>Starts at the State House</li>
+        <li>Ends near Back Bay & Copley T stations</li>
+        <li>Available when the Boston Public Library is open (limited to 12 guests)</li>
+        <li>Allow an extra hour if you haven't visited the Library.</li>
+      </ul>
+    </div>
 
-        <!-- Tour 1 -->
-        <article class="tour-detail">
-            <h3>From Beacons And Crooks To Deacons And Books</h3>
-            <blockquote class="tour-quote">
-                "That's all I claim for Boston – that it is the thinking center of the continent, and therefore of the planet." 
-                <cite>&mdash; Oliver Wendell Holmes Snr</cite>
-            </blockquote>
-            <p>A journey across the Shawmut peninsula to the made land of Boston's Back Bay, including 100 anecdotes and 1,000,000 trees.</p>
-            <p>We start on the front steps of the Massachusetts State House, and end near the Back Bay and Copley T stations.</p>
-            <p>The tour is only available on days the Boston Public Library in Copley Square is open, and limited to 12 guests.</p>
-            <p>If you haven't already visited the Boston Public Library in Copley Square, plan on an extra hour after our tour.</p>
-        </article>
+    <div class="tour-card">
+      <h2>PIZZA, PASTA, PASTRIES, PEOPLE</h2>
+      <div class="quote">“The North End smells like garlic, history, and happiness.” — Unknown</div>
+      <p>Arrive hungry for our tour, which is split into 3 parts – food – walking off the food – then food.</p>
+      <ul>
+        <li>Unique history of Boston's "Little Italy"</li>
+        <li>15+ opportunities to buy food</li>
+        <li>Bring cash (many places don't take cards)</li>
+        <li>Start/finish near the Tony DeMarco statue on Hanover Street</li>
+        <li>Restricted to 6 guests</li>
+        <li>Kids welcome (young ones often lose interest after pizza, canoli, and North End Bingo).</li>
+      </ul>
+    </div>
 
-        <!-- Tour 2 -->
-        <article class="tour-detail">
-            <h3>Pizza, Pasta, Pastries, People</h3>
-            <blockquote class="tour-quote">
-                "The North End smells like garlic, history, and happiness." 
-                <cite>&mdash; Unknown</cite>
-            </blockquote>
-            <p>Arrive hungry for our tour, which is split into 3 parts - food - walking off the food - then food.</p>
-            <p>It's a unique experience of the past and present of Boston's vibrant 400 year old North End neighborhood - our own "Little Italy".</p>
-            <p>Bring your appetite (you will have at least 15 opportunities to buy food), and cash (many places we'll pass don’t accept cards).</p>
-            <p>We start and finish within 2 minutes of the Tony DeMarco statue, on Hanover Street.</p>
-            <p>This tour is restricted to 6 guests.</p>
-            <p>Kids are welcome - tho' young ones often lose interest an hour in, after pizza, canoli, and North End Bingo.</p>
-        </article>
+    <div class="tour-card">
+      <h2>WELL, THAT'S NOT VERY NICE</h2>
+      <div class="quote">“That's where you'll find me Along with lovers, muggers, and thieves Oh, but they're cool people.” — The Standells</div>
+      <p>Explore the darker side of Boston's history on a tour of the beautiful Beacon Hill neighborhood.</p>
+      <ul>
+        <li>Persecution, slavery, wars, riots, massacres, bombings, terrorism, robberies, corruption, gangland killings, bizarre murders, and serial killers</li>
+        <li>Focus on how our responses are shaped by our upbringing and the times we live in</li>
+        <li>Lower age limit at your discretion</li>
+        <li>Meet at State House; end at Charles/MGH T</li>
+        <li>Open to 12 guests.</li>
+      </ul>
+    </div>
 
-        <!-- Tour 3 -->
-        <article class="tour-detail">
-            <h3>Well, THAT'S Not Very Nice</h3>
-            <blockquote class="tour-quote">
-                "That's where you'll find me<br>
-                Along with lovers, muggers, and thieves<br>
-                Oh, but they're cool people"
-                <cite>&mdash; The Standells</cite>
-            </blockquote>
-            <p>Explore the darker side of Boston’s history; we'll cover all the stuff the Office Of Travel And Tourism doesn’t highlight, on a tour of the beautiful Beacon Hill neighborhood.</p>
-            <p>Although you'll hear about persecution, slavery, wars, riots, massacres, bombings, terrorism, robberies, corruption, corporate malfeasance, gangland killings, bizzare murders, and serial killers, our focus is on how much our responses to these happenings are conditioned by our own upbringing, and the times we live in.</p>
-            <p>The lower age limit for this tour is at your discretion - I don’t go into gory details, but I don’t want to be the one explaining 'execution', 'dismemberment', 'decapitation', 'castration', and 'prostitution', to your kids.</p>
-            <p>We meet on the front steps of the Massachusetts State House, and end our tour at the Charles/MGH T station.</p>
-            <p>This tour is open to 12 guests.</p>
-        </article>
+    <div class="tour-card">
+      <h2>YOU SAY YOU WANT A REVOLUTION</h2>
+      <p>We all want to change our world. So what does the course of the American Revolution in Boston have to teach us about how to do that - collectively and individually?</p>
+      <p>What would it take for the people of Boston to rise up - again - and restore the possibilities and promise of American Independence? By the end of this tour, you'll have your own revolutionary plan.</p>
+      <ul>
+        <li>3 tours, or combine all 3 in one grand tour</li>
+        <li>Tour 1: Boston Common -> Faneuil Hall</li>
+        <li>Tour 2: North End (start/finish at Faneuil Hall)</li>
+        <li>Tour 3: Across the Charles to Charlestown</li>
+        <li>Tour 4: All 3 combined (lunch & a libation)</li>
+      </ul>
+    </div>
 
-        <!-- Tour 4 -->
-        <article class="tour-detail">
-            <h3>You Say You Want A Revolution</h3>
-            <blockquote class="tour-quote">
-                "It was from these shores that the vision of a new nation conceived in liberty was born, and it must be from these shores that liberty must be preserved." 
-                <cite>&mdash; Dr Martin Luther King Jr.</cite>
-            </blockquote>
-            <p>We all want to change our world. So what does the course of the American Revolution in Boston have to teach us about how to do that - collectively AND individually?</p>
-            <p>What would it take for the people of Boston to rise up - again - and restore the possibilities and promise of American Independence?</p>
-            <p>By the end of this tour you'll have your own revolutionary plan.</p>
-            <p>Our tour is in 3 parts, along Boston's Freedom Trail; you might choose to take each part separately, or combine Tours 1 , 2, and 3, in one continuous Tour 4.</p>
-            <p><strong>Tour 1</strong> starts on Boston Common, at the corner of Tremont Street and Park Street. We end outside Faneuil Hall, near Haymarket T station.</p>
-            <p><strong>Tour 2</strong> goes into Boston's North End neighborhood. We start and finish outside Faneuil Hall under the Sam Adams statue.</p>
-            <p><strong>Tour 3</strong> crosses the Charles River into Charlestown. We start outside North Station, and end at the Community College T station.</p>
-            <p>For the more ambitious, <strong>Tour 4</strong> combines all 3 separate legs into one grand tour over the course of about 3 miles. We'll stop for lunch in the North End, and a libation at the Warren Tavern.</p>
-        </article>
+    <div class="btn-container">
+      <a href="booking.html" class="btn">BOOK NOW!</a>
+    </div>
 
-        <hr>
-
-        <h2>COMING SOON</h2>
-
-        <article class="tour-detail">
-            <h3>For Cod's Sake, Let's Eat</h3>
-            <blockquote class="tour-quote">
-                "People who love to eat are always the best people." 
-                <cite>&mdash; Julia Child</cite>
-            </blockquote>
-            <p>Our tour is about - eating - our maritime history - eating - our harbor - eating - and eating.</p>
-            <p>There will be plenty of great options if you don’t eat seafood.</p>
-        </article>
-
-        <article class="tour-detail">
-            <h3>Boston Brit Box</h3>
-            <blockquote class="tour-quote">
-                "Boston is actually the capital of the world. You didn’t know that? We breed smart-ass, quippy, funny people." 
-                <cite>&mdash; John Krasinski</cite>
-            </blockquote>
-            <p>This is a participative stroll during which we'll expand our collective insights into why IS Boston like this? Come ready to join in and share your experience and opinions.</p>
-            <p>We will end our tour in the Bostonian equivalent of a pub, somewhere.</p>
-            <p>This tour will be open to 12 guests.</p>
-        </article>
-
-        <hr>
-
-        <h2>COMING IN THE SPRING - JUST IN TIME FOR THE ANNUAL BIRD MIGRATION</h2>
-
-        <article class="tour-detail">
-            <h3>Scenery, Suitability, Style, Subordination, Separation, Sanitation, and Services</h3>
-            <blockquote class="tour-quote">
-                "The enjoyment of scenery employs the mind without fatigue and yet exercises it; tranquilizes it and yet enlivens it; and thus, through the influence of the mind over the body gives the effect of refreshing rest and reinvigoration to the whole system." 
-                <cite>&mdash; Frederick Law Olmsted</cite>
-            </blockquote>
-            <p>Our tour will be an exploration of the most urban sections of Frederick Law Olmstead's Emerald Necklace.</p>
-            <p>We'll meet at the George Washington statue on the western edge of the Public Garden - meander back and forth across Commonwealth Avenue - amble thru The Fens - and finish at TimeOut for coffee or lunch, right next to Fenway station on the Green Line.</p>
-            <p>Please bring binoculars.</p>
-            <p>This tour will be open to 12 guests.</p>
-        </article>
-    </main>
-
-    <footer>
-        <div class="footer-stamp">........</div>
-        <p class="footer-tagline">YOU CAN'T BEAT BOSTON</p>
-    </footer>
+  </main>
 
 </body>
 </html>
