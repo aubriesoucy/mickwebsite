@@ -1,11 +1,11 @@
 /* Global Styling & Variables */
 :root {
-  --bg-cream: #f3ede2;
-  --navy-dark: #0c1b2a;
-  --gold-accent: #b89343;
-  --text-dark: #2b231d;
-  --card-bg: #f9f6f0;
-  --border-color: #d8cebc;
+  --bg-cream: #f8f9fa;
+  --navy-dark: #4a607a;
+  --gold-accent: #e2e6ea;
+  --text-dark: #2c3e50;
+  --card-bg: #f0f2f5;
+  --border-color: #6c8ea4;
 }
 
 * {
