@@ -1,62 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Booking - Boston Tours</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Faustina:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Thought-Provoking Tours of Boston</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Homepage</a>
-      <a href="regular-tours.html">Regular Tours</a>
-      <a href="custom-tours.html">Custom Tours</a>
-      <a href="booking.html" class="active">Booking</a>
-      <a href="about-us.html">About Us</a>
-    </nav>
-  </header>
 
-  <section class="hero-banner">
-    <h1>BOOKING PAGE</h1>
-    <p>Reserve your spot on an upcoming walk.</p>
-  </section>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="regular-tours.html">REGULAR TOURS</a></li>
+                <li><a href="custom-tours.html">CUSTOM TOURS</a></li>
+                <li><a href="booking.html" class="active">BOOKING</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <h1>BOOKING</h1>
+    </header>
 
-  <div class="container">
-    <div class="grid-3" style="margin-bottom: 2.5rem;">
-      <div class="card" style="text-align:center;">
-        <h3>🕒 Tour Duration</h3>
-        <p>Each tour lasts approximately 2 hours.</p>
-      </div>
-      <div class="card" style="text-align:center;">
-        <h3>🚶 Suitability</h3>
-        <p>Most tours cover about 1.5 miles on flat terrain.</p>
-      </div>
-      <div class="card" style="text-align:center;">
-        <h3>👥 Group Size</h3>
-        <p>6 guests on food tours; up to 12 on historic walks.</p>
-      </div>
-    </div>
+    <main class="booking-content">
+        <section class="info-group">
+            <h2>TOUR DURATION</h2>
+            <p>Each tour lasts 2 hours.</p>
+        </section>
 
-    <div class="grid-2" style="margin-bottom: 2.5rem;">
-      <div class="card">
-        <h3>📅 Scheduling</h3>
-        <p>Please schedule by text to <strong>978.505.5275</strong> or email to <strong>mick@mickverran.com</strong>.</p>
-        <p style="margin-top:0.5rem;">We'll keep in touch, and if bad rain is forecasted 2 days prior, we'll reschedule.</p>
-      </div>
+        <section class="info-group">
+            <h2>SUITABILITY</h2>
+            <p>Boston is America's Walking City, and most of our tours cover about 1.5 miles on pretty flat terrain.</p>
+        </section>
 
-      <div class="card" style="text-align:center;">
-        <h3>PRICES</h3>
-        <div style="font-size:3rem; font-weight:bold; color:var(--navy-dark);">$25</div>
-        <p><strong>PER HEAD / PER TOUR</strong></p>
-        <p style="font-size:0.85rem; margin-top:0.5rem;">Food tours may incur an additional food cost ($30-$100 depending on lobster appetite!).</p>
-      </div>
-    </div>
-  </div>
+        <section class="info-group">
+            <h2>GROUP SIZE</h2>
+            <p>We limit our tours to numbers that any stops can easily accomodate - 6 guests on our food tours, Pizza, Pasta, Pastries, and People and For Cod's Sake, Let's Eat - and up to 12 on others.</p>
+        </section>
 
-  <footer>
-    <div><strong>Ready to book?</strong><br>Send a text or email to confirm your time slot.</div>
-    <div>📞 978.505.5275 | ✉️ mick@mickverran.com</div>
-  </footer>
+        <!-- Repeat Schedule At A Glance -->
+        <section class="schedule-glance">
+            <h2>SCHEDULE AT A GLANCE</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>DAY</th>
+                        <th>TOUR</th>
+                        <th>START LOCATION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table contents -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="info-group">
+            <h2>SCHEDULING</h2>
+            <p>Please schedule by text - to <a href="tel:9785055275">978.505.5275</a> - or email - to <a href="mailto:mick@mickverran.com">mick@mickverran.com</a>.</p>
+            <p>We'll keep in touch, and if 2 days before tour day the forecast shows a high chance of rain, we'll reschedule - our tours are supposed to be fun, not an endurance test.</p>
+            <p>With that in mind, I'll ask you to pay by Venmo or cash when our tour actually sets off.</p>
+            <p>Stuff happens; if you need to cancel, please send me a text message. If you cancel within 24 hours of the start of the tour, Venmo-ing me half the fee would be appreciated.</p>
+        </section>
+
+        <section class="info-group">
+            <h2>PRICES</h2>
+            <p>All our regular tours cost the same - $25 per head per tour, regardless of age.</p>
+            <p>On our food tours, you might spend an additional ….</p>
+            <ul>
+                <li><strong>Pizza, Pasta, Pastries, People:</strong> $30 per head</li>
+                <li><strong>For Cod's Sake, Let's Eat:</strong> between $30 and $100 per head, depending on your appetite for lobster</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-stamp">........</div>
+        <p class="footer-tagline">YOU CAN'T BEAT BOSTON</p>
+    </footer>
+
 </body>
 </html>
