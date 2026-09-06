@@ -1,11 +1,11 @@
 /* Global Styling & Variables */
 :root {
-  --bg-cream: #f8f9fa;
-  --navy-dark: #4a607a;
-  --gold-accent: #e2e6ea;
-  --text-dark: #2c3e50;
+  --bg-cream: #e2e6ea;
+  --navy-dark: #fafbfe;
+  --gold-accent: #946927;
+  --text-dark: #0b2233;
   --card-bg: #f0f2f5;
-  --border-color: #6c8ea4;
+  --border-color: #9b9c9d ;
 }
 
 * {
@@ -17,12 +17,12 @@
 body {
   background-color: var(--bg-cream);
   color: var(--text-dark);
-  font-family: 'Faustina', serif;
+  font-family: 'Garamond', serif;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, nav a, .btn-primary, .btn-outline {
-  font-family: 'Cinzel', serif;
+  font-family: 'Bodoni', serif;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -39,6 +39,9 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav {
@@ -47,7 +50,7 @@ nav {
 }
 
 nav a {
-  color: #ffffff;
+  color: #2c3e50;
   font-size: 0.9rem;
   font-weight: 700;
   transition: color 0.2s ease;
@@ -67,7 +70,7 @@ nav a:hover, nav a.active {
 /* Page Banner/Hero */
 .hero-banner {
   background-color: var(--navy-dark);
-  color: #ffffff;
+  color: #2c3e50;
   padding: 3rem 1.5rem;
   text-align: center;
   border-bottom: 3px solid var(--gold-accent);
@@ -76,7 +79,7 @@ nav a:hover, nav a.active {
 
 .hero-banner h1 {
   font-size: 2.8rem;
-  color: #ffffff;
+  color: #2c3e50;
   margin-bottom: 0.5rem;
 }
 
@@ -91,7 +94,7 @@ nav a:hover, nav a.active {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
   padding: 1.5rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  box-shadow: inset 0 0 0 4px #ffffff, 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .flourish {
@@ -104,7 +107,7 @@ nav a:hover, nav a.active {
 /* Quote Banners */
 .quote-banner {
   background-color: var(--navy-dark);
-  color: #ffffff;
+  color: #2c3e50;
   padding: 2.5rem 2rem;
   text-align: center;
   margin: 2.5rem 0;
@@ -124,8 +127,12 @@ nav a:hover, nav a.active {
 }
 
 /* Buttons */
-.btn-outline {
+.btn-primary, .btn-outline, a.button {
   display: inline-block;
+  transition: all 0.3s ease; /* Enables smooth animated transition */
+}
+
+.btn-outline {
   padding: 0.5rem 1rem;
   border: 1px solid var(--navy-dark);
   color: var(--navy-dark);
@@ -134,20 +141,31 @@ nav a:hover, nav a.active {
   margin-top: 1rem;
 }
 
-.btn-outline:hover {
-  background-color: var(--navy-dark);
-  color: #ffffff;
-}
-
 .btn-primary {
   background-color: var(--navy-dark);
-  color: #ffffff;
+  color: #2c3e50;
   padding: 0.85rem 2.5rem;
   font-size: 1rem;
   font-weight: 700;
   border: none;
   cursor: pointer;
-  display: inline-block;
+}
+
+/* Hover Effects (Lift & Shadow) */
+.btn-primary:hover, .btn-outline:hover, a.button:hover {
+  transform: translateY(-3px); /* Lifts button upward */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Soft shadow below */
+}
+
+.btn-outline:hover {
+  background-color: var(--navy-dark);
+  color: #2c3e50;
+}
+
+/* Slight press effect on click */
+.btn-primary:active, .btn-outline:active, a.button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cta-center {
@@ -178,10 +196,63 @@ nav a:hover, nav a.active {
   border: 1px solid var(--border-color);
 }
 
+/* Single Container Value Props Layout */
+.value-props-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.value-prop-item {
+  flex: 1;
+  text-align: center;
+  padding: 0 1rem;
+  border-right: 1px solid var(--border-color); /* Creates the vertical line */
+}
+
+/* Remove the vertical line from the very last column */
+.value-prop-item:last-child {
+  border-right: none;
+}
+
+.prop-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.value-prop-item h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.value-prop-item p {
+  font-size: 0.85rem;
+}
+
+/* Mobile Responsiveness: switch lines to horizontal on small screens */
+@media (max-width: 768px) {
+  .value-props-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .value-prop-item {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 0 1.5rem 0;
+  }
+
+  .value-prop-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
 /* Footer */
 footer {
   background-color: var(--navy-dark);
-  color: #ffffff;
+  color: #2c3e50;
   padding: 2.5rem 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -201,4 +272,294 @@ footer a { color: var(--gold-accent); }
   .feature-row { flex-direction: column; text-align: center; }
   .feature-row img { width: 100%; }
   footer { flex-direction: column; text-align: center; }
+}
+
+/* Featured Tours Grid Layout */
+.featured-tours-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Individual Tour Cards (Tours 1-3) */
+.tour-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tour-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.tour-card h3, .tour-4-left h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tour-card p, .tour-4-left p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.btn-tour {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--navy-dark, #1a2b4c);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* Tour 4 Full Width & 2-Column Split */
+.tour-4-fullwidth {
+  grid-column: 1 / -1; /* Spans across all 3 grid columns */
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.tour-4-left {
+  flex: 1;
+  text-align: center;
+}
+
+.tour-4-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.tour-4-right {
+  flex: 1;
+  padding-left: 2rem;
+  border-left: 1px solid var(--border-color); /* Vertical line separator */
+}
+
+.tour-4-right h4 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+}
+
+.tour-4-right ul {
+  padding-left: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 850px) {
+  .featured-tours-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-4-fullwidth {
+    flex-direction: column;
+  }
+
+  .tour-4-right {
+    border-left: none;
+    border-top: 1px solid var(--border-color);
+    padding-left: 0;
+    padding-top: 1.5rem;
+    width: 100%;
+  }
+}
+
+/* Container positioning for hover effect */
+.image-hover-container {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.image-hover-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Darken image slightly when hovered */
+.image-hover-container:hover img {
+  filter: brightness(0.6);
+  transform: scale(1.03);
+}
+
+/* Book Now Button Overlay (Hidden by default) */
+.overlay-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background-color: var(--gold-accent, #946927);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Optima', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Reveal button on hover */
+.image-hover-container:hover .overlay-button {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%); /* Smoothly floats into center */
+}
+
+/* Button Hover State */
+.overlay-button:hover {
+  background-color: var(--navy-dark, #1a2b4c);
+  color: var(--gold-accent, #946927);
+}
+
+/* Luxe About Us Layout Styles */
+.about-title-block {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.luxe-title {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.luxe-subtitle {
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--text-dark);
+}
+
+.flourish-divider {
+  color: var(--gold-accent);
+  font-size: 1.5rem;
+  margin: 0.25rem 0;
+}
+
+.flourish-mini {
+  color: var(--gold-accent);
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.paragraph-flourish {
+  color: var(--gold-accent);
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  margin: 0.75rem 0;
+}
+
+/* Luxe Card Structure */
+.luxe-card {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 2.5rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: inset 0 0 0 4px #ffffff, 0 4px 12px rgba(0, 0, 0, 0.05); /* Double vintage inset border */
+}
+
+/* Framed Profile Photos */
+.photo-frame {
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.photo-frame img {
+  width: 220px;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bio Content & Centered Typography */
+.bio-content {
+  flex: 1;
+  text-align: center;
+}
+
+.bio-content h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.2rem;
+  color: var(--text-dark);
+}
+
+.role-subtitle {
+  color: var(--gold-accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bio-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-dark);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.sign-off {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--gold-accent);
+  margin-top: 0.75rem;
+}
+
+/* Divider between cards */
+.luxe-divider {
+  border-bottom: 1px dashed var(--border-color);
+  margin: 2.5rem auto;
+  width: 80%;
+}
+
+.luxe-quote {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .luxe-card {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .photo-frame img {
+    width: 100%;
+    height: auto;
+  }
 }

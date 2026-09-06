@@ -9,47 +9,62 @@
 <body>
   <header>
     <nav>
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="regular-tours.html">Regular Tours</a>
       <a href="coming-soon.html">Coming Soon</a>
       <a href="custom-tours.html">Custom Tours</a>
       <a href="booking.html">Booking</a>
-      <a href="about-us.html">About Us</a>
+      <a href="about-us.html" class="active">About Us</a>
     </nav>
   </header>
 
+  <!-- Hero Header Image -->
   <section class="hero-banner">
-    <h1>ABOUT US</h1>
-    <p>Two storytellers. Two perspectives. One unforgettable Boston.</p>
+    <img src="images/about-header.jpg" alt="About Us Header Photo" style="width: 100%; height: 100%; object-fit: cover;">
   </section>
 
   <div class="container">
-    <!-- Mick Verran Section -->
-    <div class="card" style="display:flex; gap:2rem; align-items:center; margin-bottom:2rem; flex-wrap:wrap;">
-      <img src="mick-photo.jpg" alt="Mick Verran Photo" style="width:220px; height:220px; object-fit:cover; border:1px solid var(--border-color);">
-      <div style="flex:1;">
-        <h2>Mick Verran</h2>
-        <p style="color:var(--gold-accent); margin-bottom:0.5rem; font-weight:600;">Tour Guide & Storyteller</p>
-        <p style="margin-bottom:0.75rem;">I'm a barely-integrated British immigrant, who immediately felt at home in Boston, and has come to love the city over the more than 30 years I've lived here.</p>
-        <p>After a 40+ year international career in organizational and leadership development, as a keynote speaker, trainer, and coach, I can tell when people aren't interested and I need to change the story – though I haven't seen that much since my career shift.</p>
+    <!-- Main Luxe Banner Title -->
+    <div class="about-title-block">
+      <h1 class="luxe-title">ABOUT US</h1>
+      <p class="luxe-subtitle">Two storytellers. Two perspectives. One unforgettable Boston.</p>
+    </div>
+
+    <!-- Mick Verran Card -->
+    <div class="card luxe-card">
+      <div class="photo-frame">
+        <img src="mick-photo.jpg" alt="Mick Verran Photo">
+      </div>
+      <div class="bio-content">
+        <h2>MICK VERRAN</h2>
+        <p class="role-subtitle">Tour Guide</p>
+        <p class="bio-text">I'm a barely-integrated, tea-drinking, football-loving, British immigrant. When I first arrived I immediately felt at home, and have come to love the city over the more than 30 years I've lived here.</p>
+        <div class="paragraph-flourish">✦ ✦ ✦</div>
+        <p class="bio-text">After a 40+ year international career in organizational and leadership development, as a keynote speaker, trainer, and coach, I tell a good story.</p>
       </div>
     </div>
 
-    <!-- Colonel Thomas Darling Section -->
-    <div class="card" style="display:flex; gap:2rem; align-items:center; margin-bottom:2rem; flex-wrap:wrap;">
-      <img src="colonel-photo.jpg" alt="Colonel Thomas Darling Photo" style="width:220px; height:220px; object-fit:cover; border:1px solid var(--border-color);">
-      <div style="flex:1;">
-        <h2>Colonel Thomas Darling</h2>
-        <p style="color:var(--gold-accent); margin-bottom:0.5rem; font-weight:600;">Tour Guide & Alter-Ego</p>
-        <p style="margin-bottom:0.75rem;">I have this alter-ego that works a couple of days a week on Boston Duck Tours.</p>
-        <p style="margin-bottom:0.75rem;">They let him narrate stories, but wisely they won't let him drive.</p>
-        <p><em>See you on the Charles!</em></p>
+    <div class="luxe-divider"></div>
+
+    <!-- Colonel Thomas Darling Card -->
+    <div class="card luxe-card">
+      <div class="photo-frame">
+        <img src="colonel-photo.jpg" alt="Colonel Thomas Darling Photo">
+      </div>
+      <div class="bio-content">
+        <h2>COLONEL THOMAS DARLING</h2>
+        <p class="role-subtitle">Tour Guide &amp; Storyteller</p>
+        <p class="bio-text">I have this alter-ego that works a couple of days a week on Boston Duck Tours. He's been here since 1768, watching the comings and goings of the great figures and events in Boston's history.</p>
+        <div class="paragraph-flourish">✦ ✦ ✦</div>
+        <p class="bio-text">Boston Duck Tours let him narrate stories, but wisely they won't let him drive. Contact me to schedule a seat on the Colonel's tour.</p>
+        <p class="sign-off">See you on the Charles!</p>
       </div>
     </div>
   </div>
 
-  <div class="quote-banner">
-    <blockquote>"Different voices. Same mission: Bringing Boston's stories to life."</blockquote>
+  <div class="quote-banner luxe-quote">
+    <blockquote>Different voices. Same mission: </blockquote>
+    <blockquote style = "font-style: normal; color: var(--gold-accent); font-size: 2rem;">Bringing Boston's stories to life.</blockquote>
   </div>
 
   <footer>

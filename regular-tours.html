@@ -9,8 +9,8 @@
 <body>
   <header>
     <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="regular-tours.html">Regular Tours</a>
+      <a href="index.html">Home</a>
+      <a href="regular-tours.html" class="active">Regular Tours</a>
       <a href="coming-soon.html">Coming Soon</a>
       <a href="custom-tours.html">Custom Tours</a>
       <a href="booking.html">Booking</a>
@@ -19,119 +19,108 @@
   </header>
 
   <section class="hero-banner">
-    <h1>REGULAR TOURS</h1>
-    <p>Discover our available daily and weekly walking tours.</p>
+    <img src="images/regular tour header.png" alt="Header Photo" style="width: 100%; height: 100%; object-fit:cover;">
+    <!--<h1>REGULAR TOURS</h1>-->
+    <!--<p>Discover our available daily and weekly walking tours.</p>-->
   </section>
 
   <div class="container">
-    <!-- Schedule Overview Banner -->
-    <div class="card" style="margin-bottom:2.5rem; text-align:center;">
-      <h2>Schedule at a Glance</h2>
-      <p style="margin-top:0.5rem; margin-bottom:1.5rem;">Tours run across four convenient daily timeslots.</p>
-      
-      <div class="grid-2" style="text-align:left;">
-        <div style="background:var(--bg-light, #f9f9f9); padding:1rem; border:1px solid var(--border-color); border-radius:4px;">
-          <h3 style="color:var(--navy-dark); font-size:1.1rem; margin-bottom:0.5rem;">🌅 Morning Tours</h3>
-          <ul style="margin-left:1.2rem;">
-            <li><strong>From Beacons & Crooks To Deacons & Books</strong> – Shawmut peninsula to Back Bay.</li>
-            <li><strong>Scenery, Suitability, Style, Subordination, Separation, Sanitation, and Services</strong> – Emerald Necklace stroll.</li>
-          </ul>
-        </div>
-
-        <div style="background:var(--bg-light, #f9f9f9); padding:1rem; border:1px solid var(--border-color); border-radius:4px;">
-          <h3 style="color:var(--navy-dark); font-size:1.1rem; margin-bottom:0.5rem;">🍕 Lunchtime Tours</h3>
-          <ul style="margin-left:1.2rem;">
-            <li><strong>Pizza, Pasta, Pastries, People</strong> – North End past and present (Max 6 guests).</li>
-            <li><strong>For Cod's Sake, Let's Eat</strong> – Maritime history & seafood walk.</li>
-          </ul>
-        </div>
-
-        <div style="background:var(--bg-light, #f9f9f9); padding:1rem; border:1px solid var(--border-color); border-radius:4px;">
-          <h3 style="color:var(--navy-dark); font-size:1.1rem; margin-bottom:0.5rem;">☀️ Afternoon Tours</h3>
-          <ul style="margin-left:1.2rem;">
-            <li><strong>You Say You Want A Revolution?</strong> – Freedom Trail & American Revolution plan.</li>
-            <li><strong>Boston Brit Box</strong> – Interactive insights into why Boston is like this.</li>
-          </ul>
-        </div>
-
-        <div style="background:var(--bg-light, #f9f9f9); padding:1rem; border:1px solid var(--border-color); border-radius:4px;">
-          <h3 style="color:var(--navy-dark); font-size:1.1rem; margin-bottom:0.5rem;">🌆 Early Evening Tours</h3>
-          <ul style="margin-left:1.2rem;">
-            <li><strong>Well, THAT'S Not Very Nice</strong> – Darker side of Boston history & Beacon Hill.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
     <!-- Detailed Tour List -->
     <h2 style="text-align:center; margin-bottom:1.5rem;">AVAILABLE NOW</h2>
 
-    <div class="grid-2" style="margin-bottom:2.5rem;">
+    <div class="featured-tours-grid">
       <!-- Tour 1 -->
-      <div class="card">
-        <img src="images/beacon-hill.jpg" alt="From Beacons & Crooks Photo" style="width:100%; height:180px; object-fit:cover; border:1px solid var(--border-color); margin-bottom:1rem;">
-        <h3>From Beacons & Crooks To Deacons & Books</h3>
-        <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-          <p style="font-style: italic;">"That's all I claim for Boston - that it is the thinking center of the continent, and therefore of the planet."</p>
-          <cite style="font-style: normal; display: block;"> &mdash; Oliver Wendell Holmes Snr</cite>
-        </blockquote>
-        <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Morning | 2 Hours | Open to 12 Guests</p>
-        <p style="font-weight: 600;"> A journey across the Shawmut peninsula to the made land of Boston's Back Bay.</p>
+      <div class="card tour-card">
+        <div>
+          <!-- Tour 1 Image Block -->
+          <div class="image-hover-container">
+            <img src="images/beacon-hill.jpg" alt="From Beacons & Crooks Photo">
+            <a href="booking.html" class="overlay-button">BOOK NOW</a>
+          </div>
+          <h3>From Beacons &amp; Crooks To Deacons &amp; Books</h3>
+          <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
+            <p style="font-style: italic;">"That's all I claim for Boston - that it is the thinking center of the continent, and therefore of the planet."</p>
+            <cite style="font-style: normal; display: block;"> &mdash; Oliver Wendell Holmes Snr</cite>
+          </blockquote>
+          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Morning | 2 Hours | Open to 12 Guests</p>
+          <p style="font-weight: 600;"> A journey across the Shawmut peninsula to the made land of Boston's Back Bay.</p>
           <ul>
             <li>Explore Boston Common and the Public Garden.</li>
             <li>Walk the manmade land of the Back Bay.</li>
             <li>Available when the Boston Public Library is open.</li>
           </ul>
+        </div>
       </div>
 
       <!-- Tour 2 -->
-      <div class="card">
-        <img src="images/north end.jpg" alt="Pizza Pasta Pastries Photo" style="width:100%; height:180px; object-fit:cover; border:1px solid var(--border-color); margin-bottom:1rem;">
-        <h3>Pizza, Pasta, Pastries, People</h3>
-        <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-          <p style="font-style: italic;">"The North End smells like garlic, history, and happiness."</p>
-          <cite style="font-style: normal; display: block;"> &mdash; Unknown</cite>
-        </blockquote>
-        <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Lunchtime | 2 Hours | Max 6 Guests</p>
-        <p style="font-weight: 600;">A unique experience of the past and present of Boston's vibrant 400-year-old North End ("Little Italy"). Bring your appetite and cash!</p>
+      <div class="card tour-card">
+        <div>
+          <!-- Tour 2 Image Block -->
+          <div class="image-hover-container">
+            <img src="images/north end.jpg" alt="Pizza Pasta Pastries Photo">
+            <a href="booking.html" class="overlay-button">BOOK NOW</a>
+          </div>
+          <h3>Pizza, Pasta, Pastries, People</h3>
+          <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
+            <p style="font-style: italic;">"The North End smells like garlic, history, and happiness."</p>
+            <cite style="font-style: normal; display: block;"> &mdash; Unknown</cite>
+          </blockquote>
+          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Lunchtime | 2 Hours | Max 6 Guests</p>
+          <p style="font-weight: 600;">A unique experience of the past and present of Boston's vibrant 400-year-old North End ("Little Italy"). Bring your appetite and cash!</p>
           <ul>
             <li>Experience the past and present of Boston's vibrant 400 year old North End neighborhood – our “Little Italy”</li>
             <li>15+ opportunities to buy food.</li>
             <li>Bring cash (many places don't accept cards).</li>
             <li>Kids Welcome (though very young ones often lose interest after pizza, cannoli, and North End Bingo).</li>
           </ul>
+        </div>
       </div>
 
       <!-- Tour 3 -->
-      <div class="card">
-        <img src="images/About us page image.jpg" alt="Well THATS Not Very Nice Photo" style="width:100%; height:180px; object-fit:cover; border:1px solid var(--border-color); margin-bottom:1rem;">
-        <h3>Well, THAT'S Not Very Nice</h3>
-        <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-          <p style="font-style: italic;">"That's where you'll find me along with the lovers, muggers, and thieves. Oh, but they're cool people."</p>
-          <cite style="font-style: normal; display: block;"> &mdash; The Standells</cite>
-        </blockquote>
-        <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Early Evening | 2 Hours | Open to 12 Guests</p>
-        <p style="font-weight: 600;">Explore the darker side of Boston's history on a tour of our beautiful Beacon Hill neighborhood.</p>
+      <div class="card tour-card">
+        <div>
+          <div class="image-hover-container">
+            <img src="images/About us page image.jpg" alt="Well THATS Not Very Nice Photo">
+            <a href="booking.html" class="overlay-button">BOOK NOW</a>
+          </div>
+          <h3>Well, THAT'S Not Very Nice</h3>
+          <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
+            <p style="font-style: italic;">"That's where you'll find me along with the lovers, muggers, and thieves. Oh, but they're cool people."</p>
+            <cite style="font-style: normal; display: block;"> &mdash; The Standells</cite>
+          </blockquote>
+          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Early Evening | 2 Hours | Open to 12 Guests</p>
+          <p style="font-weight: 600;">Explore the darker side of Boston's history on a tour of our beautiful Beacon Hill neighborhood.</p>
           <ul>
             <li>Persecution, slavery, wars, riots, massacres, bombings, terrorism, robberies, political corruption, corporate malfeasance, gangland, bizarre murders, and serial killers.</li>
             <li>Examine how our responses are shaped by our upbringing and the times we live in.</li>
             <li>Lower age limit at your discretion.</li>
           </ul>
+        </div>
       </div>
 
-      <!-- Tour 4 -->
-      <div class="card">
-        <img src="images/revolution.jpg" alt="You Say You Want A Revolution Photo" style="width:100%; height:180px; object-fit:cover; border:1px solid var(--border-color); margin-bottom:1rem;">
-        <h3>You Say You Want A Revolution?</h3>
-        <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-          <p style="font-style: italic;">"It was from these shores that the vision of a new nation conceived in liberty was born, and it must be from these shores that liberty must be preserved. "</p>
-          <cite style="font-style: normal; display: block;"> &mdash; Dr. Martin Luther King Jr.</cite>
-        </blockquote>
-        <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Afternoon | Open to 12 Guests</p>
-        <p style="font-weight: 600;">We all want to change our world. So what does the course of the American Revolution in Boston have to teach us about how to do that - collectively and individually?<br> 
-What would it take for the people of Boston to rise up - again - and restore the possibilities and promise of American Independence?<br>
-By the end of this tour, you'll have your own revolutionary plan.</p>
-          <ul>
+      <!-- Tour 4 (Full Width with 2-Column Split) -->
+      <div class="card tour-4-fullwidth">
+        <!-- Left Column: Image, Title & Quote -->
+        <div class="tour-4-left">
+          <div class="image-hover-container">
+            <img src="images/revolution.jpg" alt="You Say You Want A Revolution Photo">
+            <a href="booking.html" class="overlay-button">BOOK NOW</a>
+          </div>
+          <h3>You Say You Want A Revolution?</h3>
+          <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
+            <p style="font-style: italic;">"It was from these shores that the vision of a new nation conceived in liberty was born, and it must be from these shores that liberty must be preserved. "</p>
+            <cite style="font-style: normal; display: block;"> &mdash; Dr. Martin Luther King Jr.</cite>
+          </blockquote>
+        </div>
+
+        <!-- Right Column: Details, Description & Bulleted Options -->
+        <div class="tour-4-right">
+          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem; text-align: center;">Afternoon | Open to 12 Guests</p>
+          <p style="font-weight: 600;">We all want to change our world. So what does the course of the American Revolution in Boston have to teach us about how to do that - collectively and individually?<br><br> 
+          What would it take for the people of Boston to rise up - again - and restore the possibilities and promise of American Independence?<br><br>
+          By the end of this tour, you'll have your own revolutionary plan.</p>
+          
+          <ul style="margin-top: 1rem;">
             <li>Either 3 Separate Tours: </li>
             <li>Tour 1: Boston Common to Faneuil Hall</li>
             <li>Tour 2: Our North End tour</li>
@@ -139,6 +128,7 @@ By the end of this tour, you'll have your own revolutionary plan.</p>
             <li>Or...</li>
             <li>A Grand Tour that combines all three!</li>
           </ul>
+        </div>
       </div>
     </div>
   </div>
