@@ -489,7 +489,6 @@ footer a { color: var(--gold-accent); }
 .photo-frame {
   padding: 8px;
   background: #ffffff;
-  border: 1px solid var(--border-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
 }

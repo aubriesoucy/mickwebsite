@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Booking - Thought-provoking tours of Boston</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Faustina:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -20,106 +19,134 @@
 
   <!-- Hero Header Image -->
   <section class="hero-banner">
-    <img src="images/booking-header.jpg" alt="Booking" style="width: 100%; height: 100%; object-fit: cover;">
+    <img src="images/BOOKING PAGE.png" alt="Booking Header Photo" style="width: 100%; height: 100%; object-fit: cover;">
   </section>
 
   <div class="container">
-    <!-- Top 3 Info Cards -->
-    <div class="grid-3" style="margin-bottom: 2.5rem;">
-      <div class="card" style="text-align:center;">
-        <div style="font-size:2rem; margin-bottom:0.5rem;">🕒</div>
-        <h3>Tour Duration</h3>
-        <p>Each tour lasts approximately 2 hours.</p>
+    <!-- Section 1: Top 3 Overview Items (Single Container with Dividers) -->
+    <div class="card" style="display: flex; gap: 0; padding: 2rem 1rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 200px; padding: 0 1.5rem; text-align: center; border-right: 1px solid var(--border-color);">
+        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🕒</div>
+        <h3 style="font-size: 1rem; letter-spacing: 1px; margin-bottom: 0.5rem;">TOUR DURATION</h3>
+        <p style="font-size: 0.9rem;">Each tour lasts approximately 2 hours.</p>
       </div>
-      <div class="card" style="text-align:center;">
-        <div style="font-size:2rem; margin-bottom:0.5rem;">🏃</div>
-        <h3>Suitability</h3>
-        <p>Boston is America's Walking City! Most tours cover manageable distances on flat terrain with short gentle stretches.</p>
+
+      <div style="flex: 1; min-width: 200px; padding: 0 1.5rem; text-align: center; border-right: 1px solid var(--border-color);">
+        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🏃</div>
+        <h3 style="font-size: 1rem; letter-spacing: 1px; margin-bottom: 0.5rem;">SUITABILITY</h3>
+        <p style="font-size: 0.9rem;">Boston is America's Walking City!<br>Most tours cover 1.5 miles on flat terrain with short gentle stretches.</p>
       </div>
-      <div class="card" style="text-align:center;">
-        <div style="font-size:2rem; margin-bottom:0.5rem;">👥</div>
-        <h3>Group Size</h3>
-        <p>Food tours (Pizza, Pasta, Pastries, People & For Cod's Sake) are restricted to 6 guests. Other tours host up to 12 guests.</p>
+
+      <div style="flex: 1; min-width: 200px; padding: 0 1.5rem; text-align: center;">
+        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">👥</div>
+        <h3 style="font-size: 1rem; letter-spacing: 1px; margin-bottom: 0.5rem;">GROUP SIZE</h3>
+        <p style="font-size: 0.9rem;">We limit tours to numbers that any stop can easily accommodate — 6 guests on food tours, and up to 12 on others.</p>
       </div>
     </div>
 
-    <!-- Schedule at a Glance & Scheduling Details -->
-    <div class="grid-2" style="margin-bottom: 2.5rem;">
-      <div class="card">
-        <h3 style="text-align:center; margin-bottom:1rem;">📅 Schedule at a Glance</h3>
-        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem; font-size:0.9rem;">
+    <!-- Section 2: Schedule & Scheduling Split Block (Single Container) -->
+    <div class="card" style="display: flex; gap: 0; padding: 2.5rem 1.5rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
+      
+      <!-- Schedule Left Column -->
+      <div style="flex: 1; min-width: 300px; padding-right: 2rem; border-right: 1px solid var(--border-color);">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+          <h3 style="letter-spacing: 1.5px; font-size: 1.15rem; display: inline-block;">SCHEDULE AT A GLANCE</h3>
+          <div style="color: var(--gold-accent); font-size: 0.85rem; margin-top: 0.25rem;">✦ ✦ ✦</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; font-size: 0.85rem;">
           <div>
-            <strong>🌅 MORNING</strong>
-            <ul style="margin-left:1.2rem; margin-top:0.25rem;">
-              <li>From Beacons & Crooks To Deacons & Books</li>
+            <strong style="color: var(--gold-accent);">🌅 MORNING</strong>
+            <ul style="margin-left: 1.2rem; margin-top: 0.3rem; padding-left: 0;">
+              <li>From Beacons &amp; Crooks To Deacons &amp; Books</li>
               <li>Scenery, Suitability, Style...</li>
             </ul>
           </div>
+
           <div>
-            <strong>🍕 LUNCHTIME</strong>
-            <ul style="margin-left:1.2rem; margin-top:0.25rem;">
+            <strong style="color: var(--gold-accent);">🍕 LUNCHTIME</strong>
+            <ul style="margin-left: 1.2rem; margin-top: 0.3rem; padding-left: 0;">
               <li>Pizza, Pasta, Pastries, People</li>
               <li>For Cod's Sake, Let's Eat</li>
             </ul>
           </div>
+
           <div>
-            <strong>☀️ AFTERNOON</strong>
-            <ul style="margin-left:1.2rem; margin-top:0.25rem;">
+            <strong style="color: var(--gold-accent);">☀️ AFTERNOON</strong>
+            <ul style="margin-left: 1.2rem; margin-top: 0.3rem; padding-left: 0;">
               <li>You Say You Want A Revolution?</li>
-              <li>Boston Brit Box</li>
+              <li>Boston Bites &amp; Sights</li>
             </ul>
           </div>
+
           <div>
-            <strong>🌆 EARLY EVENING</strong>
-            <ul style="margin-left:1.2rem; margin-top:0.25rem;">
+            <strong style="color: var(--gold-accent);">🌆 EARLY EVENING</strong>
+            <ul style="margin-left: 1.2rem; margin-top: 0.3rem; padding-left: 0;">
               <li>Well, THAT'S Not Very Nice</li>
             </ul>
           </div>
         </div>
-        <p style="text-align:center; margin-top:1.5rem; font-size:0.85rem; font-style:italic;">
-          See the SCHEDULE AT A GLANCE on our Regular Tours page for more details.
-        </p>
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <a href="regular-tours.html#schedule-section" class="button" style="display: inline-block; padding: 0.5rem 1rem; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.5px; border-radius: 4px; border: 1px solid var(--gold-accent);">
+            VIEW FULL SCHEDULE ON REGULAR TOURS PAGE &rarr;
+          </a>
+        </div>
       </div>
 
-      <div class="card">
-        <h3 style="margin-bottom:1rem;">✉️ Scheduling & Payment</h3>
-        <p style="margin-bottom:0.75rem;">Please schedule by text – to <strong>978.505.5275</strong> – or email – to <strong>mick@mickverran.com</strong>.</p>
-        <p style="margin-bottom:0.75rem;">We'll keep in touch, and if 2 days before tour day the forecast shows a high chance of rain, we'll reschedule – our tours are supposed to be fun, not an endurance test!</p>
-        <p style="margin-bottom:0.75rem;">Payment is collected by Venmo or cash when our tour actually sets off.</p>
-        <p>If you need to cancel, please text me. Cancellations within 24 hours of start time appreciate half the fee via Venmo.</p>
+      <!-- Scheduling Right Column -->
+      <div style="flex: 1; min-width: 300px; padding-left: 2rem;">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+          <h3 style="letter-spacing: 1.5px; font-size: 1.15rem; display: inline-block;">SCHEDULING</h3>
+          <div style="color: var(--gold-accent); font-size: 0.85rem; margin-top: 0.25rem;">✦ ✦ ✦</div>
+        </div>
+
+        <div style="font-size: 0.9rem; line-height: 1.65;">
+          <p style="margin-bottom: 0.75rem;">Please schedule by text — to <strong>978.505.5275</strong> — or email — to <strong>mick@mickverran.com</strong>.</p>
+          <p style="margin-bottom: 0.75rem;">We'll keep in touch, and if 2 days before tour day the forecast shows a high chance of rain, we'll reschedule — our tours are supposed to be fun, not an endurance test!</p>
+          <p style="margin-bottom: 0.75rem;">With that in mind, I'll ask you to pay by Venmo or cash when our tour actually sets off.</p>
+          <p>Stuff happens; if you need to cancel, please send me a text message. If you cancel within 24 hours of the start of the tour, Venmo-ing me half the fee would be appreciated.</p>
+        </div>
       </div>
     </div>
 
-    <!-- Pricing Section -->
-    <div class="card" style="margin-bottom: 2.5rem;">
-      <h2 style="text-align:center; margin-bottom:1.5rem;">PRICES</h2>
-      <div style="display:flex; gap:2rem; align-items:center; flex-wrap:wrap;">
-        <div style="flex:1; min-width:280px;">
-          <img src="food-pricing-photo.jpg" alt="Food / Tour Pricing Image" style="width:100%; height:220px; object-fit:cover; border:1px solid var(--border-color);">
-        </div>
-        
-        <div style="flex:1; min-width:280px;">
-          <p style="margin-bottom:0.5rem;">All our regular tours cost the same –</p>
-          <div style="font-size:3.5rem; font-weight:bold; color:var(--navy-dark); line-height:1;">$25</div>
-          <p style="font-weight:bold; letter-spacing:0.05em; margin-bottom:1rem;">PER HEAD / PER TOUR</p>
-          <p style="font-size:0.9rem; margin-bottom:0.5rem;">regardless of age.</p>
-          <hr style="border:0; border-top:1px dashed var(--border-color); margin:1rem 0;">
-          <p style="font-size:0.95rem; margin-bottom:0.5rem;">On our food tours, food purchases are extra (cash recommended):</p>
-          <ul style="margin-left:1.2rem; font-size:0.9rem;">
-            <li><strong>Pizza, Pasta, Pastries, People</strong> – ~15 opportunities to buy food</li>
-            <li><strong>For Cod's Sake, Let's Eat</strong> – varied options including non-seafood choices</li>
-          </ul>
-        </div>
+    <!-- Section 3: Prices Section with Large Featured Image -->
+    <div style="text-align: center; margin-bottom: 1rem;">
+      <h2 style="letter-spacing: 2px;">PRICES</h2>
+      <div style="color: var(--gold-accent); font-size: 0.85rem;">✦ ✦ ✦</div>
+    </div>
+
+    <div class="card" style="display: flex; gap: 2.5rem; align-items: center; padding: 2rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px; padding: 8px; background: #ffffff; border: 1px solid var(--border-color); box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+        <img src="images/lobster-roll.jpg" alt="Lobster Roll & Fries" style="width: 100%; height: 260px; object-fit: cover; display: block;">
+      </div>
+
+      <div style="flex: 1; min-width: 300px;">
+        <p style="font-size: 1.05rem; margin-bottom: 0.5rem;">All our regular tours cost the same —</p>
+        <div style="font-size: 4rem; font-weight: 700; color: var(--gold-accent); line-height: 1;">$25</div>
+        <p style="font-weight: 700; letter-spacing: 1.5px; font-size: 1rem; margin-bottom: 0.25rem;">PER HEAD / PER TOUR</p>
+        <p style="font-size: 0.9rem; font-style: italic; color: #555; margin-bottom: 1.25rem;">regardless of age.</p>
+
+        <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">On our food tours, you might spend an additional ...</p>
+        <ul style="margin-left: 1.2rem; font-size: 0.9rem; line-height: 1.6;">
+          <li><strong>Pizza, Pasta, Pastries, People</strong> — $30 per head</li>
+          <li><strong>For Cod's Sake, Let's Eat</strong> — between $30 and $100 per head, depending on your appetite for lobster.</li>
+        </ul>
       </div>
     </div>
   </div>
 
   <footer>
-    <div><strong>READY TO EXPERIENCE BOSTON IN A WHOLE NEW WAY?</strong><br>Book your tour today and discover the real stories that shaped a city – and a nation.</div>
-    <div>
-      📞 978.505.5275<br>
-      ✉️ mick@mickverran.com<br>
-      📍 Boston, Massachusetts
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4 class="footer-heading">READY TO EXPERIENCE BOSTON IN A WHOLE NEW WAY?</h4>
+        <p class="footer-text">Book your tour today and discover the real stories that shaped a city – and a nation.</p>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-contact-item">📞 978.505.5275</p>
+        <p class="footer-contact-item">✉️ <a href="mailto:mick@mickverran.com">mick@mickverran.com</a></p>
+        <p class="footer-contact-item">📍 Boston, Massachusetts</p>
+      </div>
     </div>
   </footer>
 </body>
