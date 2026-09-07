@@ -288,6 +288,7 @@ footer a { color: var(--gold-accent); }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height:100%
 }
 
 .tour-card img {
@@ -380,7 +381,7 @@ footer a { color: var(--gold-accent); }
 .image-hover-container {
   position: relative;
   width: 100%;
-  height: 180px;
+  height: 240px;
   margin-bottom: 1rem;
   overflow: hidden;
   border-radius: 4px;
