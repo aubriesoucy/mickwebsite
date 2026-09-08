@@ -28,12 +28,12 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
 <body>
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="regular-tours.html">Regular Tours</a>
-      <a href="coming-soon.html">Coming Soon</a>
-      <a href="custom-tours.html">Custom Tours</a>
-      <a href="booking.html" class="active">Booking</a>
-      <a href="about-us.html">About Us</a>
+      <a href="{{ '/' | url }}">Home</a>
+      <a href="{{ '/regular-tours/' | url }}">Regular Tours</a>
+      <a href="{{ '/coming-soon/' | url }}">Coming Soon</a>
+      <a href="{{ '/custom-tours/' | url }}">Custom Tours</a>
+      <a href="{{ '/booking/' | url }}" class="active">Booking</a>
+      <a href="{{ '/about-us/' | url }}">About Us</a>
     </nav>
   </header>
 
@@ -99,7 +99,7 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
           </div>
         </div>
         <div style="text-align: center; margin-top: 1.5rem;">
-          <a href="regular-tours.html#schedule-section" class="button" style="display: inline-block; padding: 0.5rem 1rem; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.5px; border-radius: 4px; border: 1px solid var(--gold-accent);">
+          <a href="{{ '/regular-tours/' | url }}#schedule-section" class="button" style="display: inline-block; padding: 0.5rem 1rem; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.5px; border-radius: 4px; border: 1px solid var(--gold-accent);">
             VIEW FULL SCHEDULE ON REGULAR TOURS PAGE &rarr;
           </a>
         </div>

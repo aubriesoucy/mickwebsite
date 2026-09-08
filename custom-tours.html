@@ -25,12 +25,12 @@ button_text: "Book Your Custom Tour"
 <body>
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="regular-tours.html">Regular Tours</a>
-      <a href="coming-soon.html">Coming Soon</a>
-      <a href="custom-tours.html" class="active">Custom Tours</a>
-      <a href="booking.html">Booking</a>
-      <a href="about-us.html">About Us</a>
+      <a href="{{ '/' | url }}">Home</a>
+      <a href="{{ '/regular-tours/' | url }}">Regular Tours</a>
+      <a href="{{ '/coming-soon/' | url }}">Coming Soon</a>
+      <a href="{{ '/custom-tours/' | url }}" class="active">Custom Tours</a>
+      <a href="{{ '/booking/' | url }}">Booking</a>
+      <a href="{{ '/about-us/' | url }}">About Us</a>
     </nav>
   </header>
 
@@ -71,7 +71,7 @@ button_text: "Book Your Custom Tour"
         <p style="margin-top:0.75rem; margin-bottom:1rem;">{{ callout_text }}</p>
         <p style="margin-bottom:0.5rem;">📞 <strong>Text:</strong> {{ callout_phone }}</p>
         <p style="margin-bottom:1rem;">✉️ <strong>Email:</strong> {{ callout_email }}</p>
-        <a href="booking.html" class="button" style="display: inline-block; padding: 0.5rem 1rem; font-weight: 600; font-size: 1.5rem; letter-spacing: 0.5px; border-radius: 4px; background:var(--card-bg);border: 1px solid var(--gold-accent);">{{ button_text }}</a>
+        <a href="{{ '/booking/' | url }}" class="button" style="display: inline-block; padding: 0.5rem 1rem; font-weight: 600; font-size: 1.5rem; letter-spacing: 0.5px; border-radius: 4px; background:var(--card-bg);border: 1px solid var(--gold-accent);">{{ button_text }}</a>
       </div>
     </div>
   </div>

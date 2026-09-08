@@ -32,12 +32,12 @@ cs3_note: "Please bring binoculars."
 <body>
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="regular-tours.html">Regular Tours</a>
-      <a href="coming-soon.html" class="active">Coming Soon</a>
-      <a href="custom-tours.html">Custom Tours</a>
-      <a href="booking.html">Booking</a>
-      <a href="about-us.html">About Us</a>
+      <a href="{{ '/' | url }}">Home</a>
+      <a href="{{ '/regular-tours/' | url }}">Regular Tours</a>
+      <a href="{{ '/coming-soon/' | url }}" class="active">Coming Soon</a>
+      <a href="{{ '/custom-tours/' | url }}">Custom Tours</a>
+      <a href="{{ '/booking/' | url }}">Booking</a>
+      <a href="{{ '/about-us/' | url }}">About Us</a>
     </nav>
   </header>
 
@@ -55,7 +55,7 @@ cs3_note: "Please bring binoculars."
           <div>
             <div class="image-hover-container">
               <img src="{{ '/images/lobster-roll.jpg' | url }}" alt="For Cod's Sake, Let's Eat Photo">
-              <a href="booking.html" class="overlay-button">BOOK NOW</a>
+              <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
             </div>
             <h3>{{ cs1_title }}</h3>
             <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
@@ -72,7 +72,7 @@ cs3_note: "Please bring binoculars."
           <div>
             <div class="image-hover-container">
               <img src="{{ '/images/Ortiz image for Boston Brit box.jpg' | url }}" alt="Brit Box Photo">
-              <a href="booking.html" class="overlay-button">BOOK NOW</a>
+              <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
             </div>
             <h3>{{ cs2_title }}</h3>
             <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
@@ -90,7 +90,7 @@ cs3_note: "Please bring binoculars."
         <div class="tour-4-left">
           <div class="image-hover-container">
             <img src="{{ '/images/fens.jpg' | url }}" alt="Fens Photo">
-            <a href="booking.html" class="overlay-button">BOOK NOW</a>
+            <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
           </div>
           <h3>{{ cs3_title }}</h3>
           <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ cs3_details }}</p>

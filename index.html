@@ -43,12 +43,12 @@ location: Boston, Massachusetts
 <body>
   <header>
     <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="regular-tours.html">Regular Tours</a>
-      <a href="coming-soon.html">Coming Soon</a>
-      <a href="custom-tours.html">Custom Tours</a>
-      <a href="booking.html">Booking</a>
-      <a href="about-us.html">About Us</a>
+      <a href="{{ '/' | url }}" class="active">Home</a>
+      <a href="{{ '/regular-tours/' | url }}">Regular Tours</a>
+      <a href="{{ '/coming-soon/' | url }}">Coming Soon</a>
+      <a href="{{ '/custom-tours/' | url }}">Custom Tours</a>
+      <a href="{{ '/booking/' | url }}">Booking</a>
+      <a href="{{ '/about-us/' | url }}">About Us</a>
     </nav>
   </header>
 
@@ -103,7 +103,7 @@ location: Boston, Massachusetts
           <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">{{ feat1_title }}</h3>
           <p style="font-size: 0.9rem; margin-bottom: 1rem;">{{ feat1_text }}</p>
         </div>
-        <a href="regular-tours.html" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
+        <a href="{{ '/regular-tours/' | url }}" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
       </div>
 
       <!-- Tour 2 -->
@@ -113,7 +113,7 @@ location: Boston, Massachusetts
           <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">{{ feat2_title }}</h3>
           <p style="font-size: 0.9rem; margin-bottom: 1rem;">{{ feat2_text }}</p>
         </div>
-        <a href="regular-tours.html" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
+        <a href="{{ '/regular-tours/' | url }}" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
       </div>
 
       <!-- Tour 3 -->
@@ -123,7 +123,7 @@ location: Boston, Massachusetts
           <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">{{ feat3_title }}</h3>
           <p style="font-size: 0.9rem; margin-bottom: 1rem;">{{ feat3_text }}</p>
         </div>
-        <a href="regular-tours.html" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
+        <a href="{{ '/regular-tours/' | url }}" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
       </div>
 
       <!-- Tour 4 -->
@@ -133,13 +133,13 @@ location: Boston, Massachusetts
           <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">{{ feat4_title }}</h3>
           <p style="font-size: 0.9rem; margin-bottom: 1rem;">{{ feat4_text }}</p>
         </div>
-        <a href="regular-tours.html" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
+        <a href="{{ '/regular-tours/' | url }}" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
       </div>
     </div>
 
     <!-- View All Tours Button -->
     <div style="text-align: center; margin-bottom: 2.5rem;">
-      <a href="regular-tours.html" class="button" style="display: inline-block; padding: 0.5rem 1rem; font-weight: 600; font-size: 1.5rem; letter-spacing: 0.5px; border-radius: 4px; background:var(--card-bg);border: 1px solid var(--gold-accent);">
+      <a href="{{ '/regular-tours/' | url }}" class="button" style="display: inline-block; padding: 0.5rem 1rem; font-weight: 600; font-size: 1.5rem; letter-spacing: 0.5px; border-radius: 4px; background:var(--card-bg);border: 1px solid var(--gold-accent);">
         VIEW ALL TOURS
       </a>
     </div>

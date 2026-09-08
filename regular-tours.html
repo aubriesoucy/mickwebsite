@@ -50,12 +50,12 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
 <body>
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="regular-tours.html" class="active">Regular Tours</a>
-      <a href="coming-soon.html">Coming Soon</a>
-      <a href="custom-tours.html">Custom Tours</a>
-      <a href="booking.html">Booking</a>
-      <a href="about-us.html">About Us</a>
+      <a href="{{ '/' | url }}">Home</a>
+      <a href="{{ '/regular-tours/' | url }}" class="active">Regular Tours</a>
+      <a href="{{ '/coming-soon/' | url }}">Coming Soon</a>
+      <a href="{{ '/custom-tours/' | url }}">Custom Tours</a>
+      <a href="{{ '/booking/' | url }}">Booking</a>
+      <a href="{{ '/about-us/' | url }}">About Us</a>
     </nav>
   </header>
 
@@ -72,7 +72,7 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
         <div>
           <div class="image-hover-container">
             <img src="{{ '/images/beacon-hill.jpg' | url }}" alt="From Beacons & Crooks Photo">
-            <a href="booking.html" class="overlay-button">BOOK NOW</a>
+            <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
           </div>
           <h3>{{ tour1_title }}</h3>
           <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
@@ -94,7 +94,7 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
         <div>
           <div class="image-hover-container">
             <img src="{{ '/images/revere and old north church.jpg' | url }}" alt="Pizza Pasta Pastries Photo">
-            <a href="booking.html" class="overlay-button">BOOK NOW</a>
+            <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
           </div>
           <h3>{{ tour2_title }}</h3>
           <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
@@ -117,7 +117,7 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
         <div>
           <div class="image-hover-container">
             <img src="{{ '/images/About us page image.jpg' | url }}" alt="Well THATS Not Very Nice Photo">
-            <a href="booking.html" class="overlay-button">BOOK NOW</a>
+            <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
           </div>
           <h3>{{ tour3_title }}</h3>
           <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
@@ -139,7 +139,7 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
         <div class="tour-4-left">
           <div class="image-hover-container">
             <img src="{{ '/images/old state house 1.jpg' | url }}" alt="You Say You Want A Revolution Photo">
-            <a href="booking.html" class="overlay-button">BOOK NOW</a>
+            <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
           </div>
           <h3>{{ tour4_title }}</h3>
           <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
