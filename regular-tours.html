@@ -43,7 +43,7 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Regular Tours - Thought-provoking tours of Boston</title>
+  <title>{{ title }}</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -61,34 +61,30 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
 
   <section class="hero-banner">
     <img src="images/regular tour header.png" alt="Header Photo" style="width: 100%; height: 100%; object-fit:cover;">
-    <!--<h1>REGULAR TOURS</h1>-->
-    <!--<p>Discover our available daily and weekly walking tours.</p>-->
   </section>
 
   <div class="container">
-    <!-- Detailed Tour List -->
-    <h2 style="text-align:center; margin-bottom:1.5rem;">AVAILABLE NOW</h2>
+    <h2 style="text-align:center; margin-bottom:1.5rem;">{{ section_heading }}</h2>
 
     <div class="featured-tours-grid">
       <!-- Tour 1 -->
       <div class="card tour-card">
         <div>
-          <!-- Tour 1 Image Block -->
           <div class="image-hover-container">
             <img src="images/beacon-hill.jpg" alt="From Beacons & Crooks Photo">
             <a href="booking.html" class="overlay-button">BOOK NOW</a>
           </div>
-          <h3>From Beacons &amp; Crooks To Deacons &amp; Books</h3>
+          <h3>{{ tour1_title }}</h3>
           <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-            <p style="font-style: italic;">"That's all I claim for Boston - that it is the thinking center of the continent, and therefore of the planet."</p>
-            <cite style="font-style: normal; display: block;"> &mdash; Oliver Wendell Holmes Snr</cite>
+            <p style="font-style: italic;">"{{ tour1_quote }}"</p>
+            <cite style="font-style: normal; display: block;"> &mdash; {{ tour1_quote_author }}</cite>
           </blockquote>
-          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Morning | 2 Hours | 12 Guests Max</p>
-          <p style="font-weight: 600;"> A journey across the Shawmut peninsula to the made land of Boston's Back Bay.</p>
+          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ tour1_details }}</p>
+          <p style="font-weight: 600;">{{ tour1_summary }}</p>
           <ul>
-            <li>Explore Boston Common and the Public Garden.</li>
-            <li>Walk the manmade land of the Back Bay.</li>
-            <li>Available when the Boston Public Library is open.</li>
+            <li>{{ tour1_b1 }}</li>
+            <li>{{ tour1_b2 }}</li>
+            <li>{{ tour1_b3 }}</li>
           </ul>
         </div>
       </div>
@@ -96,23 +92,22 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
       <!-- Tour 2 -->
       <div class="card tour-card">
         <div>
-          <!-- Tour 2 Image Block -->
           <div class="image-hover-container">
             <img src="images/revere and old north church.jpg" alt="Pizza Pasta Pastries Photo">
             <a href="booking.html" class="overlay-button">BOOK NOW</a>
           </div>
-          <h3>Pizza, Pasta, Pastries, People</h3>
+          <h3>{{ tour2_title }}</h3>
           <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-            <p style="font-style: italic;">"The North End smells like garlic, history, and happiness."</p>
-            <cite style="font-style: normal; display: block;"> &mdash; Unknown</cite>
+            <p style="font-style: italic;">"{{ tour2_quote }}"</p>
+            <cite style="font-style: normal; display: block;"> &mdash; {{ tour2_quote_author }}</cite>
           </blockquote>
-          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Lunchtime | 2 Hours | 6 Guests Max</p>
-          <p style="font-weight: 600;">A unique experience of the past and present of Boston's vibrant 400-year-old North End ("Little Italy"). Bring your appetite and cash!</p>
+          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ tour2_details }}</p>
+          <p style="font-weight: 600;">{{ tour2_summary }}</p>
           <ul>
-            <li>Experience the past and present of Boston's vibrant 400 year old North End neighborhood – our “Little Italy”</li>
-            <li>15+ opportunities to buy food.</li>
-            <li>Bring cash (many places don't accept cards).</li>
-            <li>Kids Welcome (though very young ones often lose interest after pizza, cannoli, and North End Bingo).</li>
+            <li>{{ tour2_b1 }}</li>
+            <li>{{ tour2_b2 }}</li>
+            <li>{{ tour2_b3 }}</li>
+            <li>{{ tour2_b4 }}</li>
           </ul>
         </div>
       </div>
@@ -124,79 +119,75 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
             <img src="images/About us page image.jpg" alt="Well THATS Not Very Nice Photo">
             <a href="booking.html" class="overlay-button">BOOK NOW</a>
           </div>
-          <h3>Well, THAT'S Not Very Nice</h3>
+          <h3>{{ tour3_title }}</h3>
           <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-            <p style="font-style: italic;">"That's where you'll find me along with the lovers, muggers, and thieves. Oh, but they're cool people."</p>
-            <cite style="font-style: normal; display: block;"> &mdash; The Standells</cite>
+            <p style="font-style: italic;">"{{ tour3_quote }}"</p>
+            <cite style="font-style: normal; display: block;"> &mdash; {{ tour3_quote_author }}</cite>
           </blockquote>
-          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Early Evening | 2 Hours | 12 Guests Max</p>
-          <p style="font-weight: 600;">Explore the darker side of Boston's history on a tour of our beautiful Beacon Hill neighborhood.</p>
+          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ tour3_details }}</p>
+          <p style="font-weight: 600;">{{ tour3_summary }}</p>
           <ul>
-            <li>Persecution, slavery, wars, riots, massacres, bombings, terrorism, robberies, political corruption, corporate malfeasance, gangland, bizarre murders, and serial killers.</li>
-            <li>Examine how our responses are shaped by our upbringing and the times we live in.</li>
-            <li>Lower age limit at your discretion.</li>
+            <li>{{ tour3_b1 }}</li>
+            <li>{{ tour3_b2 }}</li>
+            <li>{{ tour3_b3 }}</li>
           </ul>
         </div>
       </div>
 
-      <!-- Tour 4 (Full Width with 2-Column Split) -->
+      <!-- Tour 4 -->
       <div class="card tour-4-fullwidth">
-        <!-- Left Column: Image, Title & Quote -->
         <div class="tour-4-left">
           <div class="image-hover-container">
             <img src="images/old state house 1.jpg" alt="You Say You Want A Revolution Photo">
             <a href="booking.html" class="overlay-button">BOOK NOW</a>
           </div>
-          <h3>You Say You Want A Revolution?</h3>
+          <h3>{{ tour4_title }}</h3>
           <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-            <p style="font-style: italic;">"It was from these shores that the vision of a new nation conceived in liberty was born, and it must be from these shores that liberty must be preserved. "</p>
-            <cite style="font-style: normal; display: block;"> &mdash; Dr. Martin Luther King Jr.</cite>
+            <p style="font-style: italic;">"{{ tour4_quote }}"</p>
+            <cite style="font-style: normal; display: block;"> &mdash; {{ tour4_quote_author }}</cite>
           </blockquote>
         </div>
 
-        <!-- Right Column: Details, Description & Bulleted Options -->
         <div class="tour-4-right">
-          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem; text-align: center;">Afternoon | 12 Guests Max</p>
-          <p style="font-weight: 600;">We all want to change our world. So what does the course of the American Revolution in Boston have to teach us about how to do that - collectively and individually?<br><br> 
-          What would it take for the people of Boston to rise up - again - and restore the possibilities and promise of American Independence?<br><br>
-          By the end of this tour, you'll have your own revolutionary plan.</p>
+          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem; text-align: center;">{{ tour4_details }}</p>
+          <p style="font-weight: 600;">{{ tour4_p1 }}<br><br> 
+          {{ tour4_p2 }}<br><br>
+          {{ tour4_p3 }}</p>
           
           <ul style="margin-top: 1rem;">
-            <li>Either 3 Separate Tours: </li>
-            <li>Tour 1: Boston Common to Faneuil Hall</li>
-            <li>Tour 2: Our North End tour</li>
-            <li>Tour 3: Charlestown</li>
-            <li>Or...</li>
-            <li>A Grand Tour that combines all three!</li>
+            <li>{{ tour4_b1 }}</li>
+            <li>{{ tour4_b2 }}</li>
+            <li>{{ tour4_b3 }}</li>
+            <li>{{ tour4_b4 }}</li>
+            <li>{{ tour4_b5 }}</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-    <!-- Schedule at a Glance (Single Navy Container with Dividers) -->
-    <div style="text-align: center; margin-bottom: 1.5rem;">
-      <h2 id="schedule-section" style="letter-spacing: 1px;">SCHEDULE</h2>
-    </div>
+  <div style="text-align: center; margin-bottom: 1.5rem;">
+    <h2 id="schedule-section" style="letter-spacing: 1px;">SCHEDULE</h2>
+  </div>
 
-    <div class="card value-props-container dark-strip">
-      <div class="value-prop-item">
-        <h3>MORNING</h3>
-        <p class="schedule-list">From Beacons &amp; Crooks To Deacons &amp; Books</p>
-      </div>
-      <div class="value-prop-item">
-        <h3>LUNCHTIME</h3>
-        <p class="schedule-list">Pizza, Pasta, Pastries, People</p>
-      </div>
-      <div class="value-prop-item">
-        <h3>AFTERNOON</h3>
-        <p class="schedule-list">You Say You Want A Revolution</p>
-      </div>
-      <div class="value-prop-item">
-        <h3>EARLY EVENING</h3>
-        <p class="schedule-list">Well, THAT's Not Very Nice</p>
-      </div>
+  <div class="card value-props-container dark-strip">
+    <div class="value-prop-item">
+      <h3>MORNING</h3>
+      <p class="schedule-list">{{ tour1_title }}</p>
     </div>
+    <div class="value-prop-item">
+      <h3>LUNCHTIME</h3>
+      <p class="schedule-list">{{ tour2_title }}</p>
+    </div>
+    <div class="value-prop-item">
+      <h3>AFTERNOON</h3>
+      <p class="schedule-list">{{ tour4_title }}</p>
+    </div>
+    <div class="value-prop-item">
+      <h3>EARLY EVENING</h3>
+      <p class="schedule-list">{{ tour3_title }}</p>
+    </div>
+  </div>
 
   <footer>
     <div><strong>READY TO EXPERIENCE BOSTON IN A WHOLE NEW WAY?</strong><br>Book your tour today and discover the real stories that shaped a city – and a nation.</div>

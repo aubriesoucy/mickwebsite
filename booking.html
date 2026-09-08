@@ -21,7 +21,7 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Booking - Thought-provoking tours of Boston</title>
+  <title>{{ title }}</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -37,38 +37,32 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
     </nav>
   </header>
 
-  <!-- Hero Header Image -->
   <section class="hero-banner">
     <img src="images/BOOKING PAGE.png" alt="Booking Header Photo" style="width: 100%; height: 100%; object-fit: cover;">
   </section>
 
   <div class="container">
-    <!-- Section 1: Top 3 Overview Items (Single Container with Dividers) -->
     <div class="card" style="display: flex; gap: 0; padding: 2rem 1rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
       <div style="flex: 1; min-width: 200px; padding: 0 1.5rem; text-align: center; border-right: 1px solid var(--border-color);">
         <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🕒</div>
-        <h3 style="font-size: 1rem; letter-spacing: 1px; margin-bottom: 0.5rem;">TOUR DURATION</h3>
-        <p style="font-size: 0.9rem; line-height: 1.6;">Each tour lasts approximately 2 hours.</p>
+        <h3 style="font-size: 1rem; letter-spacing: 1px; margin-bottom: 0.5rem;">{{ duration_title }}</h3>
+        <p style="font-size: 0.9rem; line-height: 1.6;">{{ duration_text }}</p>
       </div>
 
       <div style="flex: 1; min-width: 200px; padding: 0 1.5rem; text-align: center; border-right: 1px solid var(--border-color);">
         <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🏃</div>
-        <h3 style="font-size: 1rem; letter-spacing: 1px; margin-bottom: 0.5rem;">SUITABILITY</h3>
-        <p style="font-size: 0.9rem; line-height: 1.6;">Boston is America’s Walking City,<br>and so most of our tours only cover about 1.5 miles/2.4 kms on pretty flat terrain.
-        <br> Our Well, That’s Not Very Nice tour requires the ability to navigate old cobblestones, and has no convenient bathrooms en route.</p>
+        <h3 style="font-size: 1rem; letter-spacing: 1px; margin-bottom: 0.5rem;">{{ suitability_title }}</h3>
+        <p style="font-size: 0.9rem; line-height: 1.6;">{{ suitability_p1 }}<br>{{ suitability_p2 }}</p>
       </div>
 
       <div style="flex: 1; min-width: 200px; padding: 0 1.5rem; text-align: center;">
         <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">👥</div>
-        <h3 style="font-size: 1rem; letter-spacing: 1px; margin-bottom: 0.5rem;">GROUP SIZE</h3>
-        <p style="font-size: 0.9rem; line-height: 1.6;">We limit tours to numbers that any stop can easily accommodate — 6 guests on food tours, and up to 12 on others.</p>
+        <h3 style="font-size: 1rem; letter-spacing: 1px; margin-bottom: 0.5rem;">{{ groupsize_title }}</h3>
+        <p style="font-size: 0.9rem; line-height: 1.6;">{{ groupsize_text }}</p>
       </div>
     </div>
 
-    <!-- Section 2: Schedule & Scheduling Split Block (Single Container) -->
     <div class="card" style="display: flex; gap: 0; padding: 2.5rem 1.5rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
-      
-      <!-- Schedule Left Column -->
       <div style="flex: 1; min-width: 300px; padding-right: 2rem; border-right: 1px solid var(--border-color);">
         <div style="text-align: center; margin-bottom: 1.5rem;">
           <h3 style="letter-spacing: 1.5px; font-size: 1.15rem; display: inline-block;">SCHEDULE AT A GLANCE</h3>
@@ -111,23 +105,21 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
         </div>
       </div>
 
-      <!-- Scheduling Right Column -->
       <div style="flex: 1; min-width: 300px; padding-left: 2rem;">
         <div style="text-align: center; margin-bottom: 1.5rem;">
-          <h3 style="letter-spacing: 1.5px; font-size: 1.15rem; display: inline-block;">SCHEDULING</h3>
+          <h3 style="letter-spacing: 1.5px; font-size: 1.15rem; display: inline-block;">{{ scheduling_heading }}</h3>
           <div style="color: var(--gold-accent); font-size: 0.85rem; margin-top: 0.25rem;">✦ ✦ ✦</div>
         </div>
 
         <div style="font-size: 0.9rem; line-height: 1.65;">
-          <p style="margin-bottom: 0.75rem;">Please schedule by text — to <strong>978.505.5275</strong> — or email — to <strong>mick@mickverran.com</strong>.</p>
-          <p style="margin-bottom: 0.75rem;">We'll keep in touch, and if 2 days before tour day the forecast shows a high chance of rain, we'll reschedule — our tours are supposed to be fun, not an endurance test!</p>
-          <p style="margin-bottom: 0.75rem;">With that in mind, I'll ask you to pay by Venmo or cash when our tour actually sets off.</p>
-          <p>Stuff happens; if you need to cancel, please send me a text message. If you cancel within 24 hours of the start of the tour, Venmo-ing me half the fee would be appreciated.</p>
+          <p style="margin-bottom: 0.75rem;">{{ sched_p1 }}</p>
+          <p style="margin-bottom: 0.75rem;">{{ sched_p2 }}</p>
+          <p style="margin-bottom: 0.75rem;">{{ sched_p3 }}</p>
+          <p>{{ sched_p4 }}</p>
         </div>
       </div>
     </div>
 
-    <!-- Section 3: Prices Section with Large Featured Image -->
     <div style="text-align: center; margin-bottom: 1rem;">
       <h2 style="letter-spacing: 2px;">PRICES</h2>
       <div style="color: var(--gold-accent); font-size: 0.85rem;">✦ ✦ ✦</div>
@@ -140,13 +132,11 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
 
       <div style="flex: 1; min-width: 300px;">
         <p style="font-size: 1.05rem; margin-bottom: 0.5rem;">All our regular tours cost the same —</p>
-        <div style="font-size: 4rem; font-weight: 700; color: var(--gold-accent); line-height: 1;">$25</div>
-        <p style="font-weight: 700; letter-spacing: 1.5px; font-size: 1rem; margin-bottom: 0.25rem;">PER HEAD / PER TOUR</p>
-        <p style="font-size: 0.9rem; font-style: italic; color: #555; margin-bottom: 1.25rem;">regardless of age.</p>
+        <div style="font-size: 4rem; font-weight: 700; color: var(--gold-accent); line-height: 1;">{{ price_amount }}</div>
+        <p style="font-weight: 700; letter-spacing: 1.5px; font-size: 1rem; margin-bottom: 0.25rem;">{{ price_label }}</p>
+        <p style="font-size: 0.9rem; font-style: italic; color: #555; margin-bottom: 1.25rem;">{{ price_sublabel }}</p>
 
-        <p style="font-size: 0.95rem; margin-bottom: 0.5rem; font-style:italic">On our food tours, you might spend an additional <br>
-          $30 per head at your discretion – or much, much more, 
-          <br>depending on your appetite for lobster!</p>
+        <p style="font-size: 0.95rem; margin-bottom: 0.5rem; font-style:italic">{{ food_price_note }}</p>
       </div>
     </div>
   </div>

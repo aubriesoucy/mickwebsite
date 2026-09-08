@@ -25,7 +25,7 @@ cs3_note: "Please bring binoculars."
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Coming Soon - Thought-provoking tours of Boston</title>
+  <title>{{ title }}</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -46,78 +46,68 @@ cs3_note: "Please bring binoculars."
   </section>
 
   <div class="container">
-    <!-- Detailed Tour List -->
-    <h2 style="text-align:center; margin-bottom:1.5rem;">COMING SOON</h2>
+    <h2 style="text-align:center; margin-bottom:1.5rem;">{{ section_heading }}</h2>
 
     <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem;">
-      
-      <!-- Top Row: Tours 1 & 2 -->
       <div class="grid-2">
         <!-- Tour 1 -->
         <div class="card tour-card">
           <div>
-            <!-- Tour 1 Image Block -->
             <div class="image-hover-container">
               <img src="images/lobster-roll.jpg" alt="For Cod's Sake, Let's Eat Photo">
               <a href="booking.html" class="overlay-button">BOOK NOW</a>
             </div>
-            <h3>For Cod's Sake, Let's Eat</h3>
+            <h3>{{ cs1_title }}</h3>
             <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-              <p style="font-style: italic;">"People who love to eat are always the best people."</p>
-              <cite style="font-style: normal; display: block;"> &mdash; Julia Child</cite>
+              <p style="font-style: italic;">"{{ cs1_quote }}"</p>
+              <cite style="font-style: normal; display: block;"> &mdash; {{ cs1_author }}</cite>
             </blockquote>
-            <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Lunchtime | 2 Hours | 6 Guests Max</p>
-            <p style="font-weight: 600;"> Our tour is about - eating - our maritime history - eating - our harbor - eating - and eating. 
-  There will be plenty of great options if you don’t eat seafood, so you can still enjoy the history.</p>
+            <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ cs1_details }}</p>
+            <p style="font-weight: 600;">{{ cs1_desc }}</p>
           </div>
         </div>
 
         <!-- Tour 2 -->
         <div class="card tour-card">
           <div>
-            <!-- Tour 2 Image Block -->
             <div class="image-hover-container">
               <img src="images/Ortiz image for Boston Brit box.jpg" alt="Brit Box Photo">
               <a href="booking.html" class="overlay-button">BOOK NOW</a>
             </div>
-            <h3>Boston Brit Box</h3>
+            <h3>{{ cs2_title }}</h3>
             <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-              <p style="font-style: italic;">"Boston is actually the capital of the world. You didn’t know that? We breed smart-ass, quippy, funny people. "</p>
-              <cite style="font-style: normal; display: block;"> &mdash; John Krasinski</cite>
+              <p style="font-style: italic;">"{{ cs2_quote }}"</p>
+              <cite style="font-style: normal; display: block;"> &mdash; {{ cs2_author }}</cite>
             </blockquote>
-            <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Afternoon | 2 Hours | 12 Guests Max</p>
-            <p style="font-weight: 600;">This is a participative stroll during which we'll expand our collective insights to answer the question; why IS Boston like this? 
-  Come ready to join in and share your experience and opinions.</p>
+            <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ cs2_details }}</p>
+            <p style="font-weight: 600;">{{ cs2_desc }}</p>
           </div>
         </div>
       </div>
 
-      <!-- Bottom Row: Tour 3 (Full-Width Card) -->
+      <!-- Tour 3 -->
       <div class="card tour-4-fullwidth">
-        <!-- Tour 3 Left Column -->
         <div class="tour-4-left">
           <div class="image-hover-container">
             <img src="images/fens.jpg" alt="Fens Photo">
             <a href="booking.html" class="overlay-button">BOOK NOW</a>
           </div>
-          <h3>Scenery, Suitability, Style, Subordination, Separation, Sanitation, and Services</h3>
-          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">Morning | 2 Hours | 12 Guests Max</p>
+          <h3>{{ cs3_title }}</h3>
+          <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ cs3_details }}</p>
         </div>
 
-        <!-- Tour 3 Right Column -->
         <div class="tour-4-right" style="text-align: center;">
           <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0;">
-            <p style="font-style: italic;">"The enjoyment of scenery employs the mind without fatigue and yet exercises it; tranquilizes it and yet enlivens it; and thus, through the influence of the mind over the body gives the effect of refreshing rest and reinvigoration to the whole system."</p>
-            <cite style="font-style: normal; display: block;"> &mdash; Frederick Law Olmsted</cite>
+            <p style="font-style: italic;">"{{ cs3_quote }}"</p>
+            <cite style="font-style: normal; display: block;"> &mdash; {{ cs3_author }}</cite>
           </blockquote>
-          <p style="font-weight: 600; margin-bottom: 0.75rem;">Our tour will be an exploration of the most urban sections of Frederick Law Olmstead's Emerald Necklace.</p>
-            <p>The Public Garden</p>
-            <p>Commonwealth Avenue</p>
-            <p>The Fens</p>
-            <p style="font-style: italic; margin-top: 0.5rem;">Please bring binoculars.</p>
+          <p style="font-weight: 600; margin-bottom: 0.75rem;">{{ cs3_desc }}</p>
+          <p>{{ cs3_stop1 }}</p>
+          <p>{{ cs3_stop2 }}</p>
+          <p>{{ cs3_stop3 }}</p>
+          <p style="font-style: italic; margin-top: 0.5rem;">{{ cs3_note }}</p>
         </div>
       </div>
-
     </div>
   </div>
 

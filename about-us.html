@@ -18,7 +18,7 @@ banner_line2: "Bringing Boston's stories to life."
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Us - Thought-provoking tours of Boston</title>
+  <title>{{ title }}</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -34,53 +34,49 @@ banner_line2: "Bringing Boston's stories to life."
     </nav>
   </header>
 
-  <!-- Hero Header Image -->
   <section class="hero-banner">
     <img src="images/ABOUT US.png" alt="About Us Header Photo" style="width: 100%; height: 100%; object-fit: cover;">
   </section>
 
   <section class="container">
-    <!-- Main Luxe Banner Title -->
     <div class="about-title-block">
-      <h1 class="luxe-title">ABOUT US</h1>
-      <p class="luxe-subtitle">Two storytellers. Two perspectives. One unforgettable Boston.</p>
+      <h1 class="luxe-title">{{ main_title }}</h1>
+      <p class="luxe-subtitle">{{ subtitle }}</p>
     </div>
 
-    <!-- Mick Verran Card -->
     <div class="card luxe-card">
       <div class="photo-frame">
         <img src="images/Mickheadshot.jpg" alt="Mick Verran Photo">
       </div>
       <div class="bio-content">
-        <h2>MICK VERRAN</h2>
-        <p class="role-subtitle">Tour Guide</p>
-        <p class="bio-text">I'm a barely-integrated, tea-drinking, football-loving, British immigrant. When I first arrived I immediately felt at home, and have come to love the city over the more than 30 years I've lived here.</p>
+        <h2>{{ mick_name }}</h2>
+        <p class="role-subtitle">{{ mick_role }}</p>
+        <p class="bio-text">{{ mick_p1 }}</p>
         <div class="paragraph-flourish">✦ ✦ ✦</div>
-        <p class="bio-text">After a 40+ year international career in organizational and leadership development, as a keynote speaker, trainer, and coach, I see interesting connections, and I tell a good story.</p>
+        <p class="bio-text">{{ mick_p2 }}</p>
       </div>
     </div>
 
     <div class="luxe-divider"></div>
 
-    <!-- Colonel Thomas Darling Card -->
     <div class="card luxe-card">
       <div class="photo-frame">
         <img src="images/darlingheadshot.jpg" alt="Colonel Thomas Darling Photo">
       </div>
       <div class="bio-content">
-        <h2>COLONEL THOMAS DARLING</h2>
-        <p class="role-subtitle">Tour Guide &amp; Storyteller</p>
-        <p class="bio-text">I have this alter-ego that works a couple of days a week as a Boston Duck Tours ConDUCKtor. He's been here since 1768, watching the comings and goings of the great figures and events in Boston's history.</p>
+        <h2>{{ darling_name }}</h2>
+        <p class="role-subtitle">{{ darling_role }}</p>
+        <p class="bio-text">{{ darling_p1 }}</p>
         <div class="paragraph-flourish">✦ ✦ ✦</div>
-        <p class="bio-text">Boston Duck Tours let him narrate stories, for which he gets rave reviews, but wisely they won't let him drive. Contact me to schedule a seat on the Colonel's tour.</p>
-        <p class="sign-off">See you on the Charles!</p>
+        <p class="bio-text">{{ darling_p2 }}</p>
+        <p class="sign-off">{{ darling_signoff }}</p>
       </div>
     </div>
   </section>
 
   <div class="quote-banner luxe-quote">
-    <blockquote>Different voices. Same mission: </blockquote>
-    <blockquote style = "font-style: normal; color: var(--gold-accent); font-size: 2rem;">Bringing Boston's stories to life.</blockquote>
+    <blockquote>{{ banner_line1 }}</blockquote>
+    <blockquote style="font-style: normal; color: var(--gold-accent); font-size: 2rem;">{{ banner_line2 }}</blockquote>
   </div>
 
   <footer>
