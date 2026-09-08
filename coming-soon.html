@@ -26,6 +26,9 @@ cs3_note: "Please bring binoculars."
 <head>
   <meta charset="UTF-8">
   <title>{{ title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/style.css' | url }}">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -46,7 +49,9 @@ cs3_note: "Please bring binoculars."
   </section>
 
   <div class="container">
-    <h2 style="text-align:center; margin-bottom:1.5rem;">{{ section_heading }}</h2>
+    <div class="section-title-block">
+      <h2>{{ section_heading }}</h2>
+    </div>
 
     <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem;">
       <div class="grid-2">
@@ -58,9 +63,9 @@ cs3_note: "Please bring binoculars."
               <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
             </div>
             <h3>{{ cs1_title }}</h3>
-            <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-              <p style="font-style: italic;">"{{ cs1_quote }}"</p>
-              <cite style="font-style: normal; display: block;"> &mdash; {{ cs1_author }}</cite>
+            <blockquote style="font-size: 1rem; font-style: italic; margin-bottom: 0.75rem;">
+              "{{ cs1_quote }}"
+              <cite style="display: block; color: var(--gold-accent); font-style: normal; margin-top: 0.25rem;">&mdash; {{ cs1_author }}</cite>
             </blockquote>
             <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ cs1_details }}</p>
             <p style="font-weight: 600;">{{ cs1_desc }}</p>
@@ -75,9 +80,9 @@ cs3_note: "Please bring binoculars."
               <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
             </div>
             <h3>{{ cs2_title }}</h3>
-            <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-              <p style="font-style: italic;">"{{ cs2_quote }}"</p>
-              <cite style="font-style: normal; display: block;"> &mdash; {{ cs2_author }}</cite>
+            <blockquote style="font-size: 1rem; font-style: italic; margin-bottom: 0.75rem;">
+              "{{ cs2_quote }}"
+              <cite style="display: block; color: var(--gold-accent); font-style: normal; margin-top: 0.25rem;">&mdash; {{ cs2_author }}</cite>
             </blockquote>
             <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ cs2_details }}</p>
             <p style="font-weight: 600;">{{ cs2_desc }}</p>
@@ -97,15 +102,15 @@ cs3_note: "Please bring binoculars."
         </div>
 
         <div class="tour-4-right" style="text-align: center;">
-          <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0;">
-            <p style="font-style: italic;">"{{ cs3_quote }}"</p>
-            <cite style="font-style: normal; display: block;"> &mdash; {{ cs3_author }}</cite>
+          <blockquote style="font-size: 1rem; font-style: italic; margin-bottom: 1rem;">
+            "{{ cs3_quote }}"
+            <cite style="display: block; color: var(--gold-accent); font-style: normal; margin-top: 0.25rem;">&mdash; {{ cs3_author }}</cite>
           </blockquote>
           <p style="font-weight: 600; margin-bottom: 0.75rem;">{{ cs3_desc }}</p>
           <p>{{ cs3_stop1 }}</p>
           <p>{{ cs3_stop2 }}</p>
           <p>{{ cs3_stop3 }}</p>
-          <p style="font-style: italic; margin-top: 0.5rem;">{{ cs3_note }}</p>
+          <p style="font-style: italic; margin-top: 0.5rem; color: var(--gold-accent);">{{ cs3_note }}</p>
         </div>
       </div>
     </div>

@@ -16,18 +16,13 @@ feat1_text: Walk the Boston Common and Public Garden, to the Boston Public Libra
 feat2_title: PIZZA, PASTA, PASTRIES, PEOPLE
 feat2_text: A history tour in 3 parts; food – walking off the food – and food.
 feat3_title: WELL, THAT'S NOT VERY NICE
-feat3_text: Explore the darker side of Boston’s history, walking through our
-  beautiful Beacon Hill neighborhood.
+feat3_text: Explore the darker side of Boston’s history, walking through our beautiful Beacon Hill neighborhood.
 feat4_title: YOU SAY YOU WANT A REVOLUTION
-feat4_text: Walk the Freedom Trail to understand what led to the success of the
-  American Revolution in New England.
-quote_buckley: I would sooner live in a society governed by the first two
-  thousand names in Boston telephone directory than in a society governed by the
-  two thousand faculty members of Harvard University.
+feat4_text: Walk the Freedom Trail to understand what led to the success of the American Revolution in New England.
+quote_buckley: I would sooner live in a society governed by the first two thousand names in Boston telephone directory than in a society governed by the two thousand faculty members of Harvard University.
 quote_buckley_cite: William F. Buckley Jr.
 footer_heading: READY TO EXPERIENCE BOSTON IN A WHOLE NEW WAY?
-footer_text: Book your tour today and discover the stories that shaped a city —
-  and a nation.
+footer_text: Book your tour today and discover the stories that shaped a city — and a nation.
 phone: 978.505.5275
 email: mick@mickverran.com
 location: Boston, Massachusetts
@@ -37,6 +32,9 @@ location: Boston, Massachusetts
 <head>
   <meta charset="UTF-8">
   <title>{{ title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/style.css' | url }}">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -56,100 +54,90 @@ location: Boston, Massachusetts
     <img src="{{ '/images/header final.jpg' | url }}" alt="Header Photo" style="width: 100%; height: 100%; object-fit:cover;">
   </section>
 
-<!-- Value Propositions / Highlights -->
-<div class="card value-props-container">
-  <div class="value-prop-item">
-    <div class="prop-icon">📖</div>
-    <h3>{{ prop1_title }}</h3>
-    <p>{{ prop1_text }}</p>
-  </div>
-  <div class="value-prop-item">
-    <div class="prop-icon">🔍</div>
-    <h3>{{ prop2_title }}</h3>
-    <p>{{ prop2_text }}</p>
-  </div>
-  <div class="value-prop-item">
-    <div class="prop-icon">👨‍👩‍👧‍👦</div>
-    <h3>{{ prop3_title }}</h3>
-    <p>{{ prop3_text }}</p>
-  </div>
-  <div class="value-prop-item">
-    <div class="prop-icon">🍴</div>
-    <h3>{{ prop4_title }}</h3>
-    <p>{{ prop4_text }}</p>
-  </div>
-  <div class="value-prop-item">
-    <div class="prop-icon">🧭</div>
-    <h3>{{ prop5_title }}</h3>
-    <p>{{ prop5_text }}</p>
-  </div>
-</div>
-
-    <!-- Subtitle Tagline -->
-    <div style="text-align: center; font-style: italic; color: var(--gold-accent); font-size: 2rem; margin-bottom: 1rem;">
-      {{ tagline }}
+  <div class="card value-props-container">
+    <div class="value-prop-item">
+      <div class="prop-icon">📖</div>
+      <h3>{{ prop1_title }}</h3>
+      <p>{{ prop1_text }}</p>
     </div>
+    <div class="value-prop-item">
+      <div class="prop-icon">🔍</div>
+      <h3>{{ prop2_title }}</h3>
+      <p>{{ prop2_text }}</p>
+    </div>
+    <div class="value-prop-item">
+      <div class="prop-icon">👨‍👩‍👧‍👦</div>
+      <h3>{{ prop3_title }}</h3>
+      <p>{{ prop3_text }}</p>
+    </div>
+    <div class="value-prop-item">
+      <div class="prop-icon">🍴</div>
+      <h3>{{ prop4_title }}</h3>
+      <p>{{ prop4_text }}</p>
+    </div>
+    <div class="value-prop-item">
+      <div class="prop-icon">🧭</div>
+      <h3>{{ prop5_title }}</h3>
+      <p>{{ prop5_text }}</p>
+    </div>
+  </div>
+
+  <div style="text-align: center; font-style: italic; color: var(--gold-accent); font-size: 1.8rem; margin: 2rem 0;">
+    {{ tagline }}
+  </div>
     
   <div class="container">
-    <div style="text-align: center; margin-bottom: 1.5rem;">
-      <h2 style="letter-spacing: 1px;">FEATURED TOURS</h2>
+    <div class="section-title-block">
+      <h2>FEATURED TOURS</h2>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-      <!-- Tour 1 -->
-      <div class="card" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+    <div class="grid-2" style="margin-bottom: 2.5rem;">
+      <div class="card tour-card">
         <div>
-          <img src="{{ '/images/beacon-hill.jpg' | url }}" alt="{{ feat1_title }}" style="width: 100%; height: 160px; object-fit: cover; border-radius: 4px; margin-bottom: 1rem;">
-          <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">{{ feat1_title }}</h3>
+          <img src="{{ '/images/beacon-hill.jpg' | url }}" alt="{{ feat1_title }}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 1rem;">
+          <h3>{{ feat1_title }}</h3>
           <p style="font-size: 0.9rem; margin-bottom: 1rem;">{{ feat1_text }}</p>
         </div>
-        <a href="{{ '/regular-tours/' | url }}" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
+        <a href="{{ '/regular-tours/' | url }}" class="btn-primary">LEARN MORE &rarr;</a>
       </div>
 
-      <!-- Tour 2 -->
-      <div class="card" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="card tour-card">
         <div>
-          <img src="{{ '/images/north end.jpg' | url }}" alt="{{ feat2_title }}" style="width: 100%; height: 160px; object-fit: cover; border-radius: 4px; margin-bottom: 1rem;">
-          <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">{{ feat2_title }}</h3>
+          <img src="{{ '/images/north end.jpg' | url }}" alt="{{ feat2_title }}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 1rem;">
+          <h3>{{ feat2_title }}</h3>
           <p style="font-size: 0.9rem; margin-bottom: 1rem;">{{ feat2_text }}</p>
         </div>
-        <a href="{{ '/regular-tours/' | url }}" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
+        <a href="{{ '/regular-tours/' | url }}" class="btn-primary">LEARN MORE &rarr;</a>
       </div>
 
-      <!-- Tour 3 -->
-      <div class="card" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="card tour-card">
         <div>
-          <img src="{{ '/images/revolution.jpg' | url }}" alt="{{ feat3_title }}" style="width: 100%; height: 160px; object-fit: cover; border-radius: 4px; margin-bottom: 1rem;">
-          <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">{{ feat3_title }}</h3>
+          <img src="{{ '/images/revolution.jpg' | url }}" alt="{{ feat3_title }}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 1rem;">
+          <h3>{{ feat3_title }}</h3>
           <p style="font-size: 0.9rem; margin-bottom: 1rem;">{{ feat3_text }}</p>
         </div>
-        <a href="{{ '/regular-tours/' | url }}" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
+        <a href="{{ '/regular-tours/' | url }}" class="btn-primary">LEARN MORE &rarr;</a>
       </div>
 
-      <!-- Tour 4 -->
-      <div class="card" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="card tour-card">
         <div>
-          <img src="{{ '/images/old state house 1.jpg' | url }}" alt="{{ feat4_title }}" style="width: 100%; height: 160px; object-fit: cover; border-radius: 4px; margin-bottom: 1rem;">
-          <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">{{ feat4_title }}</h3>
+          <img src="{{ '/images/old state house 1.jpg' | url }}" alt="{{ feat4_title }}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 1rem;">
+          <h3>{{ feat4_title }}</h3>
           <p style="font-size: 0.9rem; margin-bottom: 1rem;">{{ feat4_text }}</p>
         </div>
-        <a href="{{ '/regular-tours/' | url }}" class="button" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy-dark, #1a2b4c); text-decoration: none; font-weight: 600; border-radius: 4px; font-size: 0.85rem;">LEARN MORE &rarr;</a>
+        <a href="{{ '/regular-tours/' | url }}" class="btn-primary">LEARN MORE &rarr;</a>
       </div>
     </div>
 
-    <!-- View All Tours Button -->
     <div style="text-align: center; margin-bottom: 2.5rem;">
-      <a href="{{ '/regular-tours/' | url }}" class="button" style="display: inline-block; padding: 0.5rem 1rem; font-weight: 600; font-size: 1.5rem; letter-spacing: 0.5px; border-radius: 4px; background:var(--card-bg);border: 1px solid var(--gold-accent);">
+      <a href="{{ '/regular-tours/' | url }}" class="btn-outline" style="font-size: 1.1rem; padding: 0.75rem 2rem;">
         VIEW ALL TOURS
       </a>
     </div>
 
-    <!-- Quote Banner -->
-    <div class="card" style="text-align: center; padding: 2rem; margin-bottom: 2.5rem; border-radius: 6px;">
-      <blockquote style="font-size: 1.15rem; font-style: italic; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-        "{{ quote_buckley }}"
-      </blockquote>
-      <p style="margin: 0; text-align: center;">&mdash; {{ quote_buckley_cite }}</p>
+    <div class="quote-banner">
+      <blockquote>"{{ quote_buckley }}"</blockquote>
+      <cite>&mdash; {{ quote_buckley_cite }}</cite>
     </div>
   </div>
 

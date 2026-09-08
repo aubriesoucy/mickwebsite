@@ -44,6 +44,9 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
 <head>
   <meta charset="UTF-8">
   <title>{{ title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/style.css' | url }}">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -64,7 +67,9 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
   </section>
 
   <div class="container">
-    <h2 style="text-align:center; margin-bottom:1.5rem;">{{ section_heading }}</h2>
+    <div class="section-title-block">
+      <h2>{{ section_heading }}</h2>
+    </div>
 
     <div class="featured-tours-grid">
       <!-- Tour 1 -->
@@ -75,9 +80,9 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
             <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
           </div>
           <h3>{{ tour1_title }}</h3>
-          <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-            <p style="font-style: italic;">"{{ tour1_quote }}"</p>
-            <cite style="font-style: normal; display: block;"> &mdash; {{ tour1_quote_author }}</cite>
+          <blockquote style="font-size: 1rem; font-style: italic; margin-bottom: 0.75rem;">
+            "{{ tour1_quote }}"
+            <cite style="display: block; color: var(--gold-accent); font-style: normal; margin-top: 0.25rem;">&mdash; {{ tour1_quote_author }}</cite>
           </blockquote>
           <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ tour1_details }}</p>
           <p style="font-weight: 600;">{{ tour1_summary }}</p>
@@ -97,9 +102,9 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
             <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
           </div>
           <h3>{{ tour2_title }}</h3>
-          <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-            <p style="font-style: italic;">"{{ tour2_quote }}"</p>
-            <cite style="font-style: normal; display: block;"> &mdash; {{ tour2_quote_author }}</cite>
+          <blockquote style="font-size: 1rem; font-style: italic; margin-bottom: 0.75rem;">
+            "{{ tour2_quote }}"
+            <cite style="display: block; color: var(--gold-accent); font-style: normal; margin-top: 0.25rem;">&mdash; {{ tour2_quote_author }}</cite>
           </blockquote>
           <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ tour2_details }}</p>
           <p style="font-weight: 600;">{{ tour2_summary }}</p>
@@ -120,9 +125,9 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
             <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
           </div>
           <h3>{{ tour3_title }}</h3>
-          <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-            <p style="font-style: italic;">"{{ tour3_quote }}"</p>
-            <cite style="font-style: normal; display: block;"> &mdash; {{ tour3_quote_author }}</cite>
+          <blockquote style="font-size: 1rem; font-style: italic; margin-bottom: 0.75rem;">
+            "{{ tour3_quote }}"
+            <cite style="display: block; color: var(--gold-accent); font-style: normal; margin-top: 0.25rem;">&mdash; {{ tour3_quote_author }}</cite>
           </blockquote>
           <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem;">{{ tour3_details }}</p>
           <p style="font-weight: 600;">{{ tour3_summary }}</p>
@@ -142,17 +147,17 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
             <a href="{{ '/booking/' | url }}" class="overlay-button">BOOK NOW</a>
           </div>
           <h3>{{ tour4_title }}</h3>
-          <blockquote style="font-size: 1.1rem; line-height: 1.6; margin: 0 0 1rem 0; max-width: 850px; margin-left: auto; margin-right: auto;">
-            <p style="font-style: italic;">"{{ tour4_quote }}"</p>
-            <cite style="font-style: normal; display: block;"> &mdash; {{ tour4_quote_author }}</cite>
+          <blockquote style="font-size: 1rem; font-style: italic;">
+            "{{ tour4_quote }}"
+            <cite style="display: block; color: var(--gold-accent); font-style: normal; margin-top: 0.25rem;">&mdash; {{ tour4_quote_author }}</cite>
           </blockquote>
         </div>
 
         <div class="tour-4-right">
           <p style="color:var(--gold-accent); font-weight:600; margin-bottom:0.5rem; text-align: center;">{{ tour4_details }}</p>
-          <p style="font-weight: 600;">{{ tour4_p1 }}<br><br> 
-          {{ tour4_p2 }}<br><br>
-          {{ tour4_p3 }}</p>
+          <p style="font-weight: 600; margin-bottom: 0.75rem;">{{ tour4_p1 }}</p>
+          <p style="font-weight: 600; margin-bottom: 0.75rem;">{{ tour4_p2 }}</p>
+          <p style="font-weight: 600;">{{ tour4_p3 }}</p>
           
           <ul style="margin-top: 1rem;">
             <li>{{ tour4_b1 }}</li>
@@ -166,26 +171,26 @@ tour4_b5: "Or... A Grand Tour that combines all three!"
     </div>
   </div>
 
-  <div style="text-align: center; margin-bottom: 1.5rem;">
-    <h2 id="schedule-section" style="letter-spacing: 1px;">SCHEDULE</h2>
+  <div class="section-title-block">
+    <h2 id="schedule-section">SCHEDULE</h2>
   </div>
 
-  <div class="card value-props-container dark-strip">
+  <div class="card value-props-container" style="margin-bottom: 3rem;">
     <div class="value-prop-item">
       <h3>MORNING</h3>
-      <p class="schedule-list">{{ tour1_title }}</p>
+      <p>{{ tour1_title }}</p>
     </div>
     <div class="value-prop-item">
       <h3>LUNCHTIME</h3>
-      <p class="schedule-list">{{ tour2_title }}</p>
+      <p>{{ tour2_title }}</p>
     </div>
     <div class="value-prop-item">
       <h3>AFTERNOON</h3>
-      <p class="schedule-list">{{ tour4_title }}</p>
+      <p>{{ tour4_title }}</p>
     </div>
     <div class="value-prop-item">
       <h3>EARLY EVENING</h3>
-      <p class="schedule-list">{{ tour3_title }}</p>
+      <p>{{ tour3_title }}</p>
     </div>
   </div>
 

@@ -19,6 +19,9 @@ banner_line2: "Bringing Boston's stories to life."
 <head>
   <meta charset="UTF-8">
   <title>{{ title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/style.css' | url }}">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -39,44 +42,44 @@ banner_line2: "Bringing Boston's stories to life."
   </section>
 
   <section class="container">
-    <div class="about-title-block">
-      <h1 class="luxe-title">{{ main_title }}</h1>
-      <p class="luxe-subtitle">{{ subtitle }}</p>
+    <div class="section-title-block">
+      <h1>{{ main_title }}</h1>
+      <p class="subtitle">{{ subtitle }}</p>
     </div>
 
-    <div class="card luxe-card">
+    <div class="card card-flex" style="margin-bottom: 2rem;">
       <div class="photo-frame">
         <img src="{{ '/images/Mickheadshot.jpg' | url }}" alt="Mick Verran Photo">
       </div>
-      <div class="bio-content">
+      <div>
         <h2>{{ mick_name }}</h2>
-        <p class="role-subtitle">{{ mick_role }}</p>
-        <p class="bio-text">{{ mick_p1 }}</p>
+        <p class="role-subtitle" style="color: var(--gold-accent); margin-bottom: 0.75rem;">{{ mick_role }}</p>
+        <p>{{ mick_p1 }}</p>
         <div class="paragraph-flourish">✦ ✦ ✦</div>
-        <p class="bio-text">{{ mick_p2 }}</p>
+        <p>{{ mick_p2 }}</p>
       </div>
     </div>
 
-    <div class="luxe-divider"></div>
+    <div class="section-divider"></div>
 
-    <div class="card luxe-card">
+    <div class="card card-flex">
       <div class="photo-frame">
         <img src="{{ '/images/darlingheadshot.jpg' | url }}" alt="Colonel Thomas Darling Photo">
       </div>
-      <div class="bio-content">
+      <div>
         <h2>{{ darling_name }}</h2>
-        <p class="role-subtitle">{{ darling_role }}</p>
-        <p class="bio-text">{{ darling_p1 }}</p>
+        <p class="role-subtitle" style="color: var(--gold-accent); margin-bottom: 0.75rem;">{{ darling_role }}</p>
+        <p>{{ darling_p1 }}</p>
         <div class="paragraph-flourish">✦ ✦ ✦</div>
-        <p class="bio-text">{{ darling_p2 }}</p>
-        <p class="sign-off">{{ darling_signoff }}</p>
+        <p>{{ darling_p2 }}</p>
+        <p style="font-style: italic; margin-top: 0.5rem; color: var(--gold-accent);">{{ darling_signoff }}</p>
       </div>
     </div>
   </section>
 
-  <div class="quote-banner luxe-quote">
+  <div class="quote-banner">
     <blockquote>{{ banner_line1 }}</blockquote>
-    <blockquote style="font-style: normal; color: var(--gold-accent); font-size: 2rem;">{{ banner_line2 }}</blockquote>
+    <blockquote style="font-style: normal; color: var(--gold-accent); font-size: 1.8rem; margin-top: 0.5rem;">{{ banner_line2 }}</blockquote>
   </div>
 
   <footer>
