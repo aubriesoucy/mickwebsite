@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # or 'master', depending on your default GitHub branch name
+
+media_folder: "images" # Where new uploaded photos will be stored
+public_folder: "images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "coming-soon.html"
+        label: "Coming Soon Page"
+        name: "coming_soon"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Body Content", name: "body", widget: "code", default_language: "html" }
