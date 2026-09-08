@@ -2,16 +2,89 @@ backend:
   name: git-gateway
   branch: main # or 'master', depending on your default GitHub branch name
 
-media_folder: "images" # Where new uploaded photos will be stored
+media_folder: "images"
 public_folder: "images"
 
 collections:
   - name: "pages"
     label: "Pages"
     files:
+      # --- HOME PAGE ---
+      - file: "index.html"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Page Title Tag", name: "title", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string", default: "We'll change how you think about Boston - forever." }
+          - { label: "Buckley Quote", name: "quote_buckley", widget: "text" }
+          - { label: "Footer Contact Phone", name: "phone", widget: "string", default: "978.505.5275" }
+          - { label: "Footer Contact Email", name: "email", widget: "string", default: "mick@mickverran.com" }
+
+      # --- REGULAR TOURS PAGE ---
+      - file: "regular-tours.html"
+        label: "Regular Tours Page"
+        name: "regular_tours"
+        fields:
+          - { label: "Page Title Tag", name: "title", widget: "string" }
+          - { label: "Tour 1 Title", name: "tour1_title", widget: "string", default: "From Beacons & Crooks To Deacons & Books" }
+          - { label: "Tour 1 Details", name: "tour1_details", widget: "string", default: "Morning | 2 Hours | 12 Guests Max" }
+          - { label: "Tour 1 Description", name: "tour1_desc", widget: "text" }
+          
+          - { label: "Tour 2 Title", name: "tour2_title", widget: "string", default: "Pizza, Pasta, Pastries, People" }
+          - { label: "Tour 2 Details", name: "tour2_details", widget: "string", default: "Lunchtime | 2 Hours | 6 Guests Max" }
+          - { label: "Tour 2 Description", name: "tour2_desc", widget: "text" }
+
+          - { label: "Tour 3 Title", name: "tour3_title", widget: "string", default: "Well, THAT'S Not Very Nice" }
+          - { label: "Tour 3 Details", name: "tour3_details", widget: "string", default: "Early Evening | 2 Hours | 12 Guests Max" }
+          - { label: "Tour 3 Description", name: "tour3_desc", widget: "text" }
+
+          - { label: "Tour 4 Title", name: "tour4_title", widget: "string", default: "You Say You Want A Revolution?" }
+          - { label: "Tour 4 Details", name: "tour4_details", widget: "string", default: "Afternoon | 12 Guests Max" }
+          - { label: "Tour 4 Description", name: "tour4_desc", widget: "text" }
+
+      # --- COMING SOON PAGE ---
       - file: "coming-soon.html"
         label: "Coming Soon Page"
         name: "coming_soon"
         fields:
-          - { label: "Page Title", name: "title", widget: "string" }
-          - { label: "Body Content", name: "body", widget: "code", default_language: "html" }
+          - { label: "Page Title Tag", name: "title", widget: "string" }
+          - { label: "Tour 1 (Cod) Details", name: "cs_tour1_details", widget: "string", default: "Lunchtime | 2 Hours | 6 Guests Max" }
+          - { label: "Tour 1 (Cod) Description", name: "cs_tour1_desc", widget: "text" }
+          - { label: "Tour 2 (Brit Box) Details", name: "cs_tour2_details", widget: "string", default: "Afternoon | 2 Hours | 12 Guests Max" }
+          - { label: "Tour 2 (Brit Box) Description", name: "cs_tour2_desc", widget: "text" }
+          - { label: "Tour 3 (Olmsted) Details", name: "cs_tour3_details", widget: "string", default: "Morning | 2 Hours | 12 Guests Max" }
+          - { label: "Tour 3 (Olmsted) Description", name: "cs_tour3_desc", widget: "text" }
+
+      # --- CUSTOM TOURS PAGE ---
+      - file: "custom-tours.html"
+        label: "Custom Tours Page"
+        name: "custom_tours"
+        fields:
+          - { label: "Page Title Tag", name: "title", widget: "string" }
+          - { label: "Header Quote", name: "custom_header_quote", widget: "string", default: "Bespoke Itineraries for Private Groups" }
+          - { label: "Custom Tours Intro Text", name: "custom_intro", widget: "text" }
+          - { label: "Leadership Offsites Text", name: "offsites_text", widget: "text" }
+          - { label: "Specialist Interests Text", name: "specialist_text", widget: "text" }
+          - { label: "No Ghost Tours Text", name: "ghosts_text", widget: "text" }
+
+      # --- BOOKING PAGE ---
+      - file: "booking.html"
+        label: "Booking Page"
+        name: "booking"
+        fields:
+          - { label: "Page Title Tag", name: "title", widget: "string" }
+          - { label: "Tour Duration Info", name: "duration_info", widget: "text" }
+          - { label: "Suitability Info", name: "suitability_info", widget: "text" }
+          - { label: "Group Size Info", name: "groupsize_info", widget: "text" }
+          - { label: "Scheduling Instructions", name: "scheduling_text", widget: "text" }
+          - { label: "Base Tour Price ($)", name: "price_base", widget: "string", default: "$25" }
+
+      # --- ABOUT US PAGE ---
+      - file: "about-us.html"
+        label: "About Us Page"
+        name: "about_us"
+        fields:
+          - { label: "Page Title Tag", name: "title", widget: "string" }
+          - { label: "Mick Verran Bio", name: "mick_bio", widget: "text" }
+          - { label: "Colonel Thomas Darling Bio", name: "darling_bio", widget: "text" }
+          - { label: "Mission Statement Quote", name: "mission_quote", widget: "string", default: "Bringing Boston's stories to life." }
