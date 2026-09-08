@@ -91,7 +91,8 @@ location: Boston, Massachusetts
       <h2>FEATURED TOURS</h2>
     </div>
 
-    <div class="grid-4" style="margin-bottom: 2.5rem;">
+    <!-- Explicitly grid all 4 items across 1 row -->
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 2.5rem;">
       <div class="card tour-card">
         <div>
           <img src="{{ '/images/beacon-hill.jpg' | url }}" alt="{{ feat1_title }}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 1rem;">
