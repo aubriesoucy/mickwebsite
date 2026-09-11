@@ -3,16 +3,14 @@ title: "Booking - Thought-provoking tours of Boston"
 duration_title: "TOUR DURATION"
 duration_text: "Each tour lasts approximately 2 hours."
 suitability_title: "SUITABILITY"
-suitability_p1: "Boston is America’s Walking City, and so most of our tours only cover about 1.5 miles/2.4 kms on pretty flat terrain."
+suitability_p1: "Boston is the United States’ Walking City, and so most of our tours only cover about 1.5 miles/2.4 kms on pretty flat terrain."
 suitability_p2: "Our Well, That’s Not Very Nice tour requires the ability to navigate old cobblestones, and has no convenient bathrooms en route."
 groupsize_title: "GROUP SIZE"
 groupsize_text: "We limit tours to numbers that any stop can easily accommodate — 6 guests on food tours, and up to 12 on others."
 scheduling_heading: "SCHEDULING"
-sched_p1: "Please schedule by text — to 978.505.5275 — or email — to mick@mickverran.com."
+sched_p1: "To schedule a tour, please text or email with your choice of tour, and preferred dates. We’ll let you know immediately what we can do. <br> Please schedule by text — to 978.505.5275 — or email — to mick@mickverran.com."
 sched_p2: "We'll keep in touch, and if 2 days before tour day the forecast shows a high chance of rain, we'll reschedule — our tours are supposed to be fun, not an endurance test!"
-sched_p3: "With that in mind, I'll ask you to pay by Venmo or cash when our tour actually sets off."
-sched_p4: "Stuff happens; if you need to cancel, please send me a text message. If you cancel within 24 hours of the start of the tour, Venmo-ing me half the fee would be appreciated."
-price_amount: "$25"
+price_amount: "$30"
 price_label: "PER HEAD / PER TOUR"
 price_sublabel: "regardless of age."
 food_price_note: "On our food tours, you might spend an additional $30 per head at your discretion – or much, much more, depending on your appetite for lobster!"
@@ -55,7 +53,7 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
       <div class="value-prop-item">
         <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🏃</div>
         <h3>{{ suitability_title }}</h3>
-        <p>{{ suitability_p1 }}<br><br>{{ suitability_p2 }}</p>
+        <p>{{ suitability_p1 }}<br><br>{{ suitability_p2 }}<div style="text-style: italic;">{{ well }}</div>{{ suitability_p2 }}</p>
       </div>
 
       <div class="value-prop-item">
@@ -118,39 +116,25 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; font-size: 0.9rem;">
           <div>
             <strong style="color: var(--gold-accent);">🌅 MORNING</strong>
-            <ul>
-              <li>From Beacons &amp; Crooks To Deacons &amp; Books</li>
-            </ul>
+            <br><p>From Beacons &amp; Crooks To Deacons &amp; Books</p>
           </div>
 
           <div>
             <strong style="color: var(--gold-accent);">🍕 LUNCHTIME</strong>
-            <ul>
-              <li>Pizza, Pasta, Pastries, People</li>
-            </ul>
+            <br><p>Pizza, Pasta, Pastries, People</p>
           </div>
 
           <div>
             <strong style="color: var(--gold-accent);">☀️ AFTERNOON</strong>
-            <ul>
-              <li>You Say You Want A Revolution?</li>
-            </ul>
+            <br><p>You Say You Want A Revolution?</p>
           </div>
 
           <div>
             <strong style="color: var(--gold-accent);">🌆 EARLY EVENING</strong>
-            <ul>
-              <li>Well, THAT'S Not Very Nice</li>
-            </ul>
+            <br><p>Well, THAT'S Not Very Nice</p>
           </div>
         </div>
 
-        <div style="text-align: center; margin-top: 1.5rem;">
-          <a href="{{ '/regular-tours/' | url }}#schedule-section" class="btn-outline" style="font-size: 0.8rem;">
-            VIEW FULL SCHEDULE &rarr;
-          </a>
-        </div>
-      </div>
 
       <div class="card">
         <div style="text-align: center; margin-bottom: 1rem;">
@@ -160,8 +144,6 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
 
         <p style="margin-bottom: 0.75rem;">{{ sched_p1 }}</p>
         <p style="margin-bottom: 0.75rem;">{{ sched_p2 }}</p>
-        <p style="margin-bottom: 0.75rem;">{{ sched_p3 }}</p>
-        <p>{{ sched_p4 }}</p>
       </div>
     </div>
 
@@ -194,7 +176,7 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
     <div>
       📞 978.505.5275<br>
       ✉️ <a href="mailto:mick@mickverran.com">mick@mickverran.com</a><br>
-      📍 Boston, Massachusetts<br>
+
       <br> Website by Gabe Soucy
     </div>
   </footer>
