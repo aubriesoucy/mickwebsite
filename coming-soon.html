@@ -53,13 +53,13 @@ cs3_note: "Please bring binoculars."
       <h2>{{ section_heading }}</h2>
     </div>
 
-  <div style="max-width: 1000px; margin: 0 auto 2rem auto;">
+<div style="width: 100%; margin: 0 auto 2rem auto;">
       <div class="grid-2" style="margin-bottom: 1.5rem;">
-<!-- Tour 1 -->
-        <div class="card tour-card" style="margin: 0;">
+        <!-- Tour 1 -->
+        <div class="card tour-card" style="margin: 0; width: 100%;">
           <div>
-            <div style="height: 220px; overflow: hidden; margin-bottom: 1rem; background: #f9f9f9;">
-              <img src="{{ '/images/lobster-roll.jpg' | url }}" alt="For Cod's Sake, Let's Eat Photo" style="width: 100%; height: 100%; object-fit: contain;">
+            <div style="width: 100%; margin-bottom: 1rem;">
+              <img src="{{ '/images/lobster-roll.jpg' | url }}" alt="For Cod's Sake, Let's Eat Photo" style="width: 100%; height: auto; display: block; border-radius: 4px;">
             </div>
             <h3>{{ cs1_title }}</h3>
             <blockquote style="font-size: 1rem; font-style: italic; margin-bottom: 0.75rem;">
@@ -72,10 +72,10 @@ cs3_note: "Please bring binoculars."
         </div>
 
         <!-- Tour 2 -->
-        <div class="card tour-card" style="margin: 0;">
+        <div class="card tour-card" style="margin: 0; width: 100%;">
           <div>
-            <div style="height: 220px; overflow: hidden; margin-bottom: 1rem; background: #f9f9f9;">
-              <img src="{{ '/images/Ortiz image for Boston Brit box.jpg' | url }}" alt="Brit Box Photo" style="width: 100%; height: 100%; object-fit: contain;">
+            <div style="width: 100%; margin-bottom: 1rem;">
+              <img src="{{ '/images/Ortiz image for Boston Brit box.jpg' | url }}" alt="Brit Box Photo" style="width: 100%; height: auto; display: block; border-radius: 4px;">
             </div>
             <h3>{{ cs2_title }}</h3>
             <blockquote style="font-size: 1rem; font-style: italic; margin-bottom: 0.75rem;">
@@ -86,9 +86,10 @@ cs3_note: "Please bring binoculars."
             <p style="font-weight: 600;">{{ cs2_desc }}</p>
           </div>
         </div>
-        
+      </div>
+
       <!-- Tour 3 -->
-      <div class="card tour-4-fullwidth">
+      <div class="card tour-4-fullwidth" style="width: 100%;">
         <div class="tour-4-left">
           <div>
             <img src="{{ '/images/fens.jpg' | url }}" alt="Fens Photo">
@@ -110,7 +111,6 @@ cs3_note: "Please bring binoculars."
         </div>
       </div>
     </div>
-  </div>
 
   <footer>
     <div><strong>READY TO EXPERIENCE BOSTON IN A WHOLE NEW WAY?</strong><br>Book your tour today and discover the real stories that shaped a city – and a nation.</div>
