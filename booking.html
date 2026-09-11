@@ -45,7 +45,6 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
   </section>
 
   <div class="container">
-    <!-- Value Props Strip for Duration, Suitability, Group Size -->
     <div class="card value-props-container">
       <div class="value-prop-item">
         <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🕒</div>
@@ -64,6 +63,48 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
         <h3>{{ groupsize_title }}</h3>
         <p>{{ groupsize_text }}</p>
       </div>
+    </div>
+
+    <!-- Booking Inquiry Form Section -->
+    <div class="card" style="max-width: 650px; margin: 0 auto 2.5rem auto; padding: 2rem;">
+      <h3 style="text-align: center; margin-bottom: 1rem;">BOOK A TOUR INQUIRY</h3>
+      <div class="paragraph-flourish">✦ ✦ ✦</div>
+
+      <div id="thank-you-message" style="display: none; text-align: center; color: var(--gold-accent); font-size: 1.2rem; padding: 1.5rem 1rem; font-weight: 600;">
+        Thank you for your inquiry! You'll hear back from me within 24 hours.
+      </div>
+
+      <form id="tour-inquiry-form" name="tour-inquiry" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="tour-inquiry" />
+
+        <div style="margin-bottom: 1rem;">
+          <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Name</label>
+          <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+          <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Email</label>
+          <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+          <label for="tour-select" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Select a Tour</label>
+          <select id="tour-select" name="tour" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; background: white;">
+            <option value="" disabled selected>-- Choose a Tour --</option>
+            <option value="From Beacons & Crooks To Deacons & Books">From Beacons & Crooks To Deacons & Books</option>
+            <option value="Pizza, Pasta, Pastries, People">Pizza, Pasta, Pastries, People</option>
+            <option value="Well, THAT'S Not Very Nice">Well, THAT'S Not Very Nice</option>
+            <option value="You Say You Want A Revolution?">You Say You Want A Revolution?</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="tour-date" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Select Date</label>
+          <input type="date" id="tour-date" name="date" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; cursor: pointer;">SUBMIT INQUIRY</button>
+      </form>
     </div>
 
     <!-- Schedule & Policies -->
@@ -157,5 +198,44 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
       <br> Website by Gabe Soucy
     </div>
   </footer>
+
+  <script>
+    const datePicker = document.getElementById('tour-date');
+    const today = new Date().toISOString().split('T')[0];
+    datePicker.setAttribute('min', today);
+
+    // Add blocked dates in 'YYYY-MM-DD' format if needed
+    const blockedDates = []; 
+
+    datePicker.addEventListener('input', function(e) {
+      const selectedDate = this.value;
+      const day = new Date(selectedDate).getUTCDay();
+
+      // Block Mondays (1) & Wednesdays (3) or dates in blockedDates list
+      if (day === 1 || day === 3 || blockedDates.includes(selectedDate)) { 
+        alert('Sorry, tours are not available on this date. Please select another date.');
+        this.value = '';
+      }
+    });
+
+    const form = document.getElementById('tour-inquiry-form');
+    const thankYouMessage = document.getElementById('thank-you-message');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(() => {
+        form.style.display = 'none';
+        thankYouMessage.style.display = 'block';
+      })
+      .catch((error) => alert('Submission failed. Please email mick@mickverran.com directly.'));
+    });
+  </script>
 </body>
 </html>

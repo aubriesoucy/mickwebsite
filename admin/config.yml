@@ -119,9 +119,9 @@ collections:
 
           # Tour 3
           - { label: "Tour 3 Title", name: "cs3_title", widget: "string" }
-          - { label: "Tour 3 Details", name: "cs3_details", widget: "string" }
           - { label: "Tour 3 Quote", name: "cs3_quote", widget: "text" }
           - { label: "Tour 3 Quote Author", name: "cs3_author", widget: "string" }
+          - { label: "Tour 3 Details", name: "cs3_details", widget: "string" }
           - { label: "Tour 3 Description", name: "cs3_desc", widget: "text" }
           - { label: "Tour 3 Stop 1", name: "cs3_stop1", widget: "string" }
           - { label: "Tour 3 Stop 2", name: "cs3_stop2", widget: "string" }
