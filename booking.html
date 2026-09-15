@@ -65,48 +65,6 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
       </div>
     </div>
 
-    <!-- Booking Inquiry Form Section -->
-    <div class="card" style="max-width: 650px; margin: 0 auto 2.5rem auto; padding: 2rem;">
-      <h3 style="text-align: center; margin-bottom: 1rem;">BOOK A TOUR INQUIRY</h3>
-      <div class="paragraph-flourish">✦ ✦ ✦</div>
-
-      <div id="thank-you-message" style="display: none; text-align: center; color: var(--gold-accent); font-size: 1.2rem; padding: 1.5rem 1rem; font-weight: 600;">
-        Thank you for your inquiry! You'll hear back from me within 24 hours.
-      </div>
-
-      <form id="tour-inquiry-form" name="tour-inquiry" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="tour-inquiry" />
-
-        <div style="margin-bottom: 1rem;">
-          <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Name</label>
-          <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px;">
-        </div>
-
-        <div style="margin-bottom: 1rem;">
-          <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Email</label>
-          <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px;">
-        </div>
-
-        <div style="margin-bottom: 1rem;">
-          <label for="tour-select" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Select a Tour</label>
-          <select id="tour-select" name="tour" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; background: white;">
-            <option value="" disabled selected>-- Choose a Tour --</option>
-            <option value="From Beacons & Crooks To Deacons & Books">From Beacons & Crooks To Deacons & Books</option>
-            <option value="Pizza, Pasta, Pastries, People">Pizza, Pasta, Pastries, People</option>
-            <option value="Well, THAT'S Not Very Nice">Well, THAT'S Not Very Nice</option>
-            <option value="You Say You Want A Revolution?">You Say You Want A Revolution?</option>
-          </select>
-        </div>
-
-        <div style="margin-bottom: 1.5rem;">
-          <label for="tour-date" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Select Date</label>
-          <input type="date" id="tour-date" name="date" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px;">
-        </div>
-
-        <button type="submit" class="btn-primary" style="width: 100%; cursor: pointer;">SUBMIT INQUIRY</button>
-      </form>
-    </div>
-
     <!-- Schedule & Policies -->
     <div class="grid-2" style="margin-bottom: 2.5rem;">
       <div class="card">
@@ -169,6 +127,56 @@ food_price_note: "On our food tours, you might spend an additional $30 per head 
       </div>
     </div>
   </div>
+
+    <div class="section-title-block">
+      <h2>BOOK A TOUR</h2>
+      <div class="paragraph-flourish">✦ ✦ ✦</div>
+    </div>
+
+      <!-- Booking Inquiry Form Section -->
+    <div class="card" style="max-width: 650px; margin: 0 auto 2.5rem auto; padding: 2rem;">
+      <h3 style="text-align: center; margin-bottom: 1rem;">SUBMIT AN INQUIRY</h3>
+      <div class="paragraph-flourish">✦ ✦ ✦</div>
+
+      <div id="thank-you-message" style="display: none; text-align: center; color: var(--gold-accent); font-size: 1.2rem; padding: 1.5rem 1rem; font-weight: 600;">
+        Thank you for your inquiry! You'll hear back from me within 24 hours.
+      </div>
+
+      <form id="tour-inquiry-form" name="tour-inquiry" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="tour-inquiry" />
+
+        <div style="margin-bottom: 1rem;">
+          <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Name</label>
+          <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+          <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Email</label>
+          <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+          <label for="tour-select" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Select a Tour</label>
+          <select id="tour-select" name="tour" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; background: white;">
+            <option value="" disabled selected>-- Choose a Tour --</option>
+            <option value="From Beacons & Crooks To Deacons & Books">From Beacons & Crooks To Deacons & Books</option>
+            <option value="Pizza, Pasta, Pastries, People">Pizza, Pasta, Pastries, People</option>
+            <option value="Well, THAT'S Not Very Nice">Well, THAT'S Not Very Nice</option>
+            <option value="You Say You Want A Revolution?">You Say You Want A Revolution?</option>
+            <option value="Custom Tour">Custom Tour</option>
+            <option value="Leadership Team Offsite">Leadership Team Offsite</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="tour-date" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Select Date</label>
+          <input type="date" id="tour-date" name="date" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; cursor: pointer;">SUBMIT INQUIRY</button>
+      </form>
+    </div>
+
 
   <footer>
     <div>
